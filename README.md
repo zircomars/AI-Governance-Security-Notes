@@ -19,6 +19,13 @@ Tekoläyn avulla voi rakentaa monipuolisia asioita mm.
 - Deepfake (syväväärennös - esim. Henkilö ei ole sanonut tällaista lauseta tai säkeistöä, mutta tekoäly teki sen mm. käyti ihmisten kieltä, sitä huulen liikuvuutta ja jne).
 - Viestintä korjauksia - kirjoitusvirheitä ja normaali viestintää varten.
 
+**Syksy 2025**:
+- Chat-pohjainen tekoäly voi antaa ohjeita käyttäjälle eri sovellusten tai järjestelmien käyttöön. Esimerkiksi se voi neuvoa, mistä löytää tietyn lomakkeen tai painikkeen, tai miten tehdä muutoksia pilvipalvelussa. Tekoäly ei kuitenkaan tee muutoksia automaattisesti ilman asianmukaista integraatiota.
+- Tekoälyn käytön rajoitukset: Tekoäly ei välttämättä pysty seuraamaan sovelluksen tilannetta reaaliajassa. Esimerkiksi, jos kysytään subscription-tyypistä (ilmainen, premium, prioriteetti), tekoäly voi antaa ohjeita vain sen tiedon perusteella, joka on sille saatavilla. Ohjeet voivat olla vanhentuneita, ja tekoäly joutuu itse analysoimaan, mikä ohje pätee ajankohtaisesti.
+  - Esimerkkejä:  
+  - Microsoft Azure -pilvipalvelu: tekoäly voi kertoa, että lisenssi on ilmainen, P1 tai P2, mutta se ei näe suoraan käyttäjän tilannetta.  
+  - Microsoft Office -työkalut: Tekoäly ei tiedä aluksi, onko käyttäjällä selainpohjainen versio vai työasemaohjelma (desktop). Esimerkiksi, jos käyttäjä haluaa tehdä Excelissä pylväskaavion, tekoäly saattaa aluksi antaa ohjeet desktop-version mukaan. Kun käyttäjä kertoo käyttävänsä selainta, tekoäly ymmärtää tilanteen ja antaa ohjeet selainversion mukaisesti.
+
 ## Hyviä ja huonoja puolia
 
 ### Tässä hyvänä puolena:
@@ -28,7 +35,6 @@ Tekoläyn avulla voi rakentaa monipuolisia asioita mm.
   - Tästä hyvänä puolena on se, että tekoäly voi joissain tapauksissa hakea rajoitetusti aiempia keskusteluita (esim. päivien, viikkojen tai kuukausien takaa).
   - Tämä ominaisuus näkyy erityisesti **Microsoft Copilot** -tekoälyssä (Viimeisin tieto syksy 2025).
   - Copilot pystyy hyödyntämään aikaisempia keskusteluita, mutta se ei välttämättä pysty tuomaan vanhoja keskusteluita (esim. yli viikon tai kuukauden takaa) suoraan takaisin näkyviin. Sen sijaan se voi muistuttaa käyttäjää ja antaa ohjeita aiempien keskusteluiden perusteella.
-
 
 ### Huono puolet:
 - Monille huono puoli on se, että keskustelut joudutaan usein aloittamaan alusta, ja aikaisemmissa versioissa tai palveluissa on ollut rajoituksia keskusteluiden määrään (esim. rajoitettu määrä viestejä yhdessä keskustelussa).
@@ -40,6 +46,7 @@ Tekoläyn avulla voi rakentaa monipuolisia asioita mm.
 **Huomio (syksy 2025):**  
 - Hyvinä ja huono puolena, tästä riippuu käyttäjästä miten käyttää tekoälynsä. Osat saattaa huomata sen käytönsä, että pitääkö paikkaansa, ja se ei välttämättä pysty lukemaan käyttäjän sielua ja ajatusta, mitä käyttäjä haluaa seuraavaksi. Useimmin tekoälyn kanssa joutuu kuin opettaa pienen palan, jotta se ymmärtää, ja tästä pätee myös muita tekoälyn sovelluksia ja työkaluja, kuten VSCode:n oma tekoäly, nettisivustojen oma tekoälychätti jne. Tästä riippuu tekoälyn kehityksestä, miten käyttäjä syöttää sen kenttään.
 
+---
 
 ## Tekoälyn tulevaisuus
 
