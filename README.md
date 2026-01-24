@@ -6,6 +6,9 @@ A repository focused on AI safety, general AI usage practices, and security cons
 - **AI Pentest** eli penetraatiotesti tarkoittaa eettistä hakkerointia, jossa sekä hyökkäävä että suojeleva tiimi testaa, miten suojata yrityksen palveluita, kuten verkkosivustoja, palvelimia ja muita sovelluksia.  
 - **EU AI Act** tarkoittaa Euroopan tekoälylain säädöstä/asetusta, joka tuli voimaan vuonna keväällä 2025. Tämä asetus kertoo, mitä se tarkoittaa ja ketä se koskee.
 
+
+![alt text](/images/AI-law-concept-img.jpg) 
+
 ---
 
 # Tekoälyn chättin käyttö 
