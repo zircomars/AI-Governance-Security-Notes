@@ -189,7 +189,51 @@ Kyseessä on käytännössä “Shadow AI visibility + governance” Microsoftin
 
 ---
 
+![alt text](images/admincenter4.png) 
 
+# Agenttipohjaiset sovellukset ja järjestelmänvalvonnan mahdollisuudet
+
+✅ Nämä ovat agenttipohjaisia sovelluksia, jotka:
+
+- Toimivat Copilotin kautta eri kanavissa (Outlook, Teams, Microsoft 365)
+- On integroitu Microsoftin ekosysteemiin (Sales by Microsoft) tai kolmannen osapuolen kautta (Asana, Egnyte, LawToolBox)
+- Käyttäytyvät kuin älykkäät käyttöliittymät: tietoja voidaan hakea, ehdotuksia voidaan antaa, vastauksia voidaan muodostaa, ja toimintoja voidaan suorittaa käyttäjän puolesta
+
+---
+
+## 🧠 Mitä järjestelmänvalvoja voi tehdä?
+
+### 1. Agenttien käyttöä voidaan seurata
+
+Aktiiviset agentit, niiden käyttöönottoajankohdat ja toimintakanavat voidaan nähdä.
+
+### 2. Käyttäjien agenttiaktiviteettia voidaan valvoa
+
+Vaikka yksittäisten käyttäjien tarkkoja kysymyksiä ei voida nähdä, seuraavat asiat voidaan tarkastella:
+
+- Käytetyt agentit käyttäjäkohtaisesti
+- Suosituimmat agentit voidaan arvioida
+- Epäilyttävät tai ei-hyväksytyt agentit (shadow agents) voidaan tunnistaa
+
+### 3. Agentteja voidaan estää tai hyväksyä
+
+Seuraavat toiminnot voidaan toteuttaa:
+
+- Agentin käyttö voidaan estää koko tenantissa
+- Vain tietyt agentit voidaan hyväksyä
+- Agenttien lataus- ja käyttöoikeudet voidaan hallita
+
+---
+
+## 🕵️‍♂️ Shadow AI -valvonta
+
+“All agents” -näkymä toimii myös shadow AI -tutkana:
+
+- Jos agentti otetaan käyttöön ilman virallista hyväksyntää → se näkyy listassa
+- Jos organisaatio julkaisee agentin, joka käyttää organisaation dataa → se näkyy listassa
+- Jos agentti toimii useissa kanavissa (Teams, Outlook) ilman valvontaa → se voidaan havaita täältä
+
+Kyseessä on ensimmäinen kerros, jossa Copilotin kautta toimivat agentit voidaan havaita ja hallita, erityisesti silloin kun ne käyttävät organisaation dataa.
 
 
 
