@@ -100,8 +100,133 @@ Yhteinen sääntö:
 
 Tämä pätee riippumatta siitä, ollaanko töissä, koulussa, lomalla, työttömänä tai vapaa-ajalla. Tekoälyn käyttö ei ole sidottu rooliin tai aikaan — vaan siihen, mitä dataa käytetään ja miten.
 
+---
+---
+
+# Tekoälypalvelun tilit ja shadow AI ‑riskit
+
+## 🔷 1) Tarvitseeko tekoälypalveluun tilin?
+
+Tiliä ei aina vaadita, mutta kun tili on käytössä, data lähtee palveluntarjoajalle samalla tavalla.
+
+Kirjautumisen yhteydessä:
+
+- data yhdistyy tiliin  
+- data yhdistyy sähköpostiin, IP-osoitteeseen tai istuntoon  
+
+Tietovuoto ei riipu siitä, onko tili käytössä — vaan siitä, mitä dataa syötetään.
+
+---
+
+## 🔷 2) Mitä eroa on henkilökohtaisella tilillä vs. yritystilillä?
+
+### 🟩 Henkilökohtainen tili (free plan)
+
+- Ei ole sopimusta työnantajan kanssa  
+- Ei ole DPA:ta  
+- Ei ole tietosuojavalvontaa  
+- Ei ole lokitusta  
+- Dataa ei käsitellä mallin koulutukseen liittyen  
+- Dataa voidaan säilyttää pitkään  
+- Käyttö ei ole vastuullista eikä valvottua  
+
+> Jos työdataa syötetään henkilökohtaiseen tiliin, syntyy shadow AI.  
+> Tällöin dataa ei voida suojata, eikä palveluntarjoaja tai IT-tuki voi auttaa.  
+> Käyttäjä ei voi varmistaa, onko tekoälypalvelun syöttökenttä turvallinen — ja riski syntyy heti, kun arkaluonteista tietoa syötetään.
 
 
+### 🟦 Yritystili (enterprise / business)
 
+- On sopimus palveluntarjoajan kanssa  
+- On DPA (GDPR-yhteensopiva)  
+- Dataa ei käytetä mallin koulutukseen  
+- Dataa ei säilytetä ilman lupaa  
+- Käyttö on valvottua ja hyväksyttyä  
+- Käyttö on lokitettua  
+
+> Jos työdataa syötetään → ei synny shadow AI, koska käyttö on hyväksytty ja valvottu.
+> Data voidaan suojata paremmin, ja tämä riippuu yrityksen käyttämästä lisenssistä sekä siitä, mitä lokitusta, häiriönhallintaa ja muita palvelun sopimukseen kuuluvia ominaisuuksia palveluntarjoaja tarjoaa yrityksen henkilöstölle ja käyttäjille.
+> Yrityksen on kuitenkin seurattava jatkuvasti GDPR-vaatimuksia ja muita säädöksiä, minkä vuoksi henkilöstöä on koulutettava säännöllisesti ja muistutettava ohjeista, jotta tietoturva ja toimintatavat pysyvät ajan tasalla.
+
+---
+
+## 🔷 3) Mitä jos henkilö ei ole töissä ja käyttää omaa tiliä, ja sitten menee töihin?
+
+Tämä on tärkeä kohta.
+
+### 🟦 Ennen töitä
+
+- Henkilö voi käyttää omaa tiliään vapaasti  
+- Ei ole työnantajaa, joka dataa voisi vaatia  
+- Ei ole riskiä shadow AI:sta, koska ei ole organisaatiota, jota ohitetaan  
+
+### 🟩 Kun henkilö aloittaa työssä
+
+- Sama henkilökohtainen tili jatkuu  
+- Sama AI-työkalu jatkuu  
+- Sama käyttötapa jatkuu  
+
+> Mutta kun työdataa syötetään henkilökohtaiseen tiliin, shadow AI syntyy välittömästi.
+> Tilanne voi myös sekoittua, jos ei ole varmuutta siitä, onko kirjautuneena työtilille vai henkilökohtaiseen tiliin. Tämä voi tapahtua esimerkiksi silloin, kun työpäivän jälkeen jatketaan työskentelyä kotona, etsitään tietoa kiinnostuksesta tai jatketaan tehtäviä vapaa-ajalla — jolloin työmoodi jatkuu huomaamatta ja data päätyy väärään ympäristöön.
+
+Kyse ei ole siitä, mitä tiliä käytetään ennen töitä — vaan siitä, mitä sillä tehdään töissä.
+
+---
+
+## 🔷 4) Miksi yritys vaatii yritystilin?
+
+Yritystili mahdollistaa:
+
+- datan hallinnan  
+- datan säilytyksen  
+- datan sijoittamisen EU-alueelle  
+- mallien koulutuksen eston  
+- lokituksen  
+- käyttöoikeuksien hallinnan  
+
+→ Henkilökohtainen tili ei tarjoa mitään näistä.
+
+---
+
+## 🔷 5) Yhteenveto yhdellä lauseella
+
+Henkilökohtainen tili on täysin hyväksyttävä ennen työn alkamista, mutta heti kun työdataa syötetään siihen, syntyy shadow AI — yritystili on ainoa turvallinen ja hyväksytty tapa käyttää tekoälyä työssä.
+
+Tietovuoto tapahtuu, kun data siirtyy tekoälypalvelun palvelimille — ja sen jälkeen organisaatio ei enää hallitse, missä data on, miten sitä säilytetään ja kuka siihen pääsee käsiksi.
+
+---
+
+## 🔷 Lyhyt, selkeä ja mustavalkoinen vastaus
+
+### 🟩 Työssä
+
+- Käytetään yritystiliä  
+- Käytetään työympäristöä (Azure, M365, Copilot, VS Code yritysasetuksilla)  
+- Käyttö tapahtuu organisaation hallitsemassa ympäristössä  
+
+→ Käyttö on turvallista, sopimuksellista ja tietoturvallista  
+→ Shadow AI ‑tilannetta ei synny, kun työdataa käytetään vain työtilissä.
+
+### 🟥 Työn ulkopuolella / henkilökohtaisessa elämässä
+
+- Käytetään henkilökohtaista tiliä  
+- Käytetään AI-palveluita omissa projekteissa, harrastuksissa ja opiskelussa  
+- Käytetään vain omia tietoja — ei muiden henkilötietoja  
+
+→ Käyttö on täysin normaalia ja turvallista.
+
+---
+
+## 🔷 Mikä on se kriittinen ero?
+
+Ero ei ole siinä, onko tili käytössä vai ei.  
+Ero on siinä, mitä dataa syötetään ja minne.
+
+→ Kun työdataa syötetään → tarvitaan yritystili  
+→ Muuten syntyy shadow AI → tietovuoto
+
+Työdataa ei saa syöttää henkilökohtaisella tilillä — ja kun näitä kahta ei sekoiteta, kaikki on kunnossa.
+
+Tämä koskee työntekijöitä, esimiehiä, uusia työntekijöitä, harjoittelijoita, opiskelijoita ja ammattilaisia.
 
 
