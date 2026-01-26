@@ -1,114 +1,151 @@
 # Shadow AI: määritelmä, riskit ja tekninen erittely
 
 <img src="../images/Shadow-Ai-image.jpg" width="600">
+# Copilot Studio, agenttien hallinta ja shadow AI: riskit ja käytännöt
 
-
-## 🔍 Mitä shadow AI tarkoittaa?
-
-Shadow AI:lla tarkoitetaan tekoälyn käyttöä organisaatiossa ilman IT-osaston hyväksyntää, valvontaa tai tietoa. Työntekijät voivat käyttää AI-työkaluja (esim. ChatGPT, Copilot, AutoML, kuvan- tai koodingenerointityökalut) työtehtävissä, vaikka niitä ei ole virallisesti sallittu.
+Shadow AI:lla tarkoitetaan tekoälyn käyttöä työtehtävissä ilman organisaation lupaa, ohjeistusta tai valvontaa. Työkalujen käyttö tapahtuu ilman IT-osaston hyväksyntää, eikä tiedetä, mitä dataa syötetään tai mihin se päätyy.
 
 > IBM: “unconsented use of an AI tool without IT approval”  
-> Varonis: “AI tools used without the knowledge or oversight of IT or security teams”  
-> Group-IB: korostaa generatiivisten AI-työkalujen luvattoman käytön riskejä
+> Gartner, Forrester, Varonis: korostetaan IT:n ja tietoturvan ulkopuolista käyttöä  
+> Group-IB: painotetaan generatiivisten AI-työkalujen riskejä
+
+### Tyypillisiä käyttäjiä
+
+- HR
+- Dev / IT / ICT
+- Markkinointi
+- Myynti
+- Testaus
+- Johto
+- Tuki
+- Ulkoiset konsultit
 
 ---
 
 ## ❓ Miten shadow AI syntyy?
 
-- AI-palveluja käytetään julkisesti ja helposti saatavilla olevissa sovelluksissa
-- Organisaatiossa ei ole selkeitä AI-politiikkoja
-- Käyttö tapahtuu ilman ymmärrystä riskeistä tai lupakäytännöistä
+- AI-työkaluja käytetään selaimessa, sovelluksissa tai sähköpostiohjelmissa ilman asennuksia tai tunnuksia
+- Organisaatiossa ei ole selkeitä AI-politiikkoja tai hyväksyntäprosesseja
+- Työntekijät eivät tiedä, että käyttö on luvanvaraista tai riskialtista
 
 ---
 
 ## ⚠️ Miksi se on ongelma?
 
 - Tietovuotojen ja datan ulosvirtausten riski
-- Compliance-rikkomukset (GDPR, sopimukset, toimialasääntely)
-- Mallien väärinkäyttö ilman turvallisuustarkastusta
+- GDPR:n ja sopimusten rikkominen
+- Mallien väärinkäyttö ja hallitsematon versiointi
+- Auditoinnin ja näkyvyyden puute
 
 ---
 
-## 🤷 Miksi sitä kuitenkin tapahtuu?
+## 🧩 Käytännön esimerkkejä
 
-- AI-työkalut ovat helposti saatavilla ja nopeita käyttää
-- Työntekijät haluavat ratkaista ongelmat heti, eivät odottaa virallisia prosesseja
-
----
-
-## 📌 Konkreettisia esimerkkejä shadow AI:sta
-
-1. Kehittäjä käyttää generatiivista AI-mallia koodin tuottamiseen  
-   → Koodia generoidaan AI-palvelussa ilman tietoa syötteistä tai mallin käytöstä
-
-2. Markkinointitiimi käyttää AI-työkalua ilman IT-hyväksyntää  
-   → Dataa käytetään julkaisuun ilman DPA-sopimusta
-
-3. HR käyttää AI-pohjaista CV-analyysityökalua ilman tietoturvatarkastusta  
-   → CV-dataa lähetetään kolmannen osapuolen palvelimille
-
-4. Analyytikko kokeilee AutoML-palvelua omalla datalla  
-   → Data ladataan pilvipalveluun, jota ei ole hyväksytty
+| Rooli | Käyttötilanne | Riskit |
+|------|----------------|--------|
+| Kehittäjä | Koodia generoidaan ChatGPT:llä | Ei tiedetä, mitä dataa syötetään tai mihin se tallentuu |
+| Markkinointi | AI:ta käytetään sisällön luomiseen | Asiakasdataa voidaan syöttää ilman DPA-sopimusta |
+| HR | CV-analyysityökalu käytössä | Data voi päätyä kolmannen osapuolen palvelimille |
+| Analyytikko | AutoML-palvelua testataan | Data ladataan ei-hyväksyttyyn pilvipalveluun |
 
 ---
 
-## 🧠 Shadow AI:n tekniset riskit
+## 🔐 Tekninen riskierittely
 
-### 1) Data-egress — hallitsematon datan ulosvirtaus
-
-- Data siirtyy tuntemattomiin palveluihin ilman siirtopolitikkaa tai valvontaa
-- Ei tiedetä, missä maassa data päätyy tai säilytetäänkö sitä mallin koulutukseen
-- Forensiikkaa ei voida tehdä, jos data vuotaa
-
-### 2) Mallien retention-politiikat — mitä mallille syötetty data tekee?
-
-- Data voi päätyä mallin koulutukseen, parantamiseen tai vastauksiin
-- Organisaatio menettää kontrollin datan elinkaaresta
-- Retention-politiikkaa ei voida yksilöidä (esim. GDPR Art. 17)
-
-### 3) API- ja integraatioriskit
-
-- AI-työkalut voivat käyttää API:a ja DL-suojauksia
-- Liikennettä ei voida valvoa tai estää väärinkäyttöä
-
-### 4) Mallien hallitsematon versiointi ja päivitykset
-
-- Mallien versiot vaihtuvat ilman kontrollia
-- Tulokset voivat muuttua päivittäin
-- Auditointi on mahdotonta
-
-### 5) Haavoittuvuudet ja supply-chain-riskit
-
-- Käytetään epäluotettavia open-source-malleja tai epävakaita komponentteja
-- Piilotettuja riippuvuuksia ja haitallisia kirjastoja voi esiintyä
-
-### 6) Compliance-rikkomukset (GDPR, ISO 27001, sopimukset)
-
-- GDPR-sääntelyä ja sopimuksia voidaan rikkoa
-- Toimialasääntelyä (esim. finanssi, terveys) ei noudateta
-
-### 7) Hallinnan ja näkyvyyden puute
-
-- Ei tiedetä, mitä työkaluja käytetään
-- Ei tiedetä, mitä dataa syötetään tai mitä vastauksia saadaan
+| Riski | Tekninen vaikutus |
+|-------|--------------------|
+| Data-egress | Data poistuu organisaatiosta ilman valvontaa |
+| Retention | Data voi jäädä malliin pysyvästi |
+| API-riskit | Liikennettä ei voida valvoa, ei DLP-suojaa |
+| Versiointi | Mallien tulokset muuttuvat, auditointi mahdotonta |
+| Supply-chain | AI-mallit voivat sisältää haitallisia komponentteja |
+| Compliance | GDPR, sopimukset, toimialasääntely voivat rikkoutua |
+| Näkyvyys | Ei tietoa siitä, mitä AI-työkaluja käytetään |
 
 ---
 
-## 📊 Yhteenveto teknisestä näkökulmasta
+## ✅ Missä kulkee raja?
 
-| Riski             | Tekninen vaikutus |
-|-------------------|-------------------|
-| Data-egress       | Data poistuu organisaatiosta ilman valvontaa |
-| Retention         | Data voi jäädä malliin pysyvästi |
-| API-riskit        | Ei voida valvoa liikennettä, ei DLP-suojaa |
-| Versiointi        | Mallien tulokset muuttuvat, auditointi mahdotonta |
-| Supply-chain      | AI-mallit voi sisältää haitallisia riippuvuuksia |
-| Compliance        | GDPR, sopimukset, sääntely voivat rikkoutua |
-| Näkyvyys          | Ei tietoa siitä, mitä AI-työkaluja käytetään |
+### Sallittu ja turvallinen käyttö
+
+- Käytetään organisaation hyväksymää AI-työkalua
+- Työkalu on käynyt läpi tietoturvakatsauksen
+- Käyttöön on ohjeet, eikä syötetä arkaluonteista dataa
+
+### Shadow AI (kielletty / riskialtis)
+
+- Työkalua käytetään ilman lupaa
+- Syötetään yrityksen sisäistä koodia tai dataa julkiseen palveluun
+- Palvelulla ei ole DPA-sopimusta tai tietoturvakontrollia
 
 ---
 
-## ✅ Suositus
+## 🧠 Copilot Studio: lisenssivaatimukset ja kokeiluversiot
 
-Shadow AI ‑käyttöä tulisi hallita selkeillä AI-politiikoilla, teknisillä valvontakeinoilla ja roolikohtaisilla käyttöoikeuksilla. Riskit voidaan minimoida, kun näkyvyys, valvonta ja hyväksyntä ovat kunnossa.
+Copilot Studio ‑työkalun käyttö edellyttää voimassa olevia lisenssejä tai tilausta. Työkalua ei enää tarjota täysin ilmaisena versiona ilman ehtoja.
+
+### Kokeiluversio
+
+- Voidaan kokeilla maksutta rajoitetun ajan (n. 30 päivää)
+- Mahdollistaa agenttien luomisen ja testauksen
+- Edellyttää Azure-tiliä ja laskutusasetuksia
+
+### Lisenssityypit
+
+- **Käyttäjälisenssi**: teknisesti maksuton, mutta vaatii tenantin aktivoinnin (esim. Copilot Credits)
+- **Tenant-lisenssi / Copilot Credit -paketti**: maksullinen, mahdollistaa tuotantokäytön
+
+---
+
+## 🤖 Agenttien hallinta: Block ja Deploy
+
+Agenttien käyttöä hallitaan samalla tavalla kuin sovelluksia:
+
+### ❌ Block
+
+- Agentti ei ole käytettävissä
+- Käyttö ei näy Copilotissa
+- Estetään myös shadow AI -käyttö
+
+### ✅ Deploy
+
+- Agentti otetaan käyttöön valituille käyttäjille tai ryhmille
+- Käyttö näkyy Copilotissa (Teams, M365, Outlook)
+- Agenttia voidaan käyttää ja sen tietoja hyödyntää
+
+### Käytännön esimerkki: 5 roolia ja 5 sovellusta
+
+| Käyttäjä | Canva | Adobe Express | Word | Excel | Monday.com |
+|----------|-------|----------------|------|--------|-------------|
+| Laura (Markkinointi) | ✅ Deploy | ✅ Deploy | ✅ Deploy | ❌ Block | ✅ Deploy |
+| Mika (Taloushallinto) | ❌ Block | ❌ Block | ✅ Deploy | ✅ Deploy | ❌ Block |
+| Sanna (HR) | ❌ Block | ❌ Block | ✅ Deploy | ✅ Deploy | ✅ Deploy |
+| Jari (IT) | ❌ Block | ❌ Block | ✅ Deploy | ✅ Deploy | ✅ Deploy |
+| Emilia (Graafinen suunnittelu) | ✅ Deploy | ✅ Deploy | ✅ Deploy | ❌ Block | ❌ Block |
+
+---
+
+## 📊 Copilot Channel ja shadow AI ‑integraatiot
+
+- Sovellus liitetään Copilot Channeliin → käyttö tapahtuu Copilotin kautta
+- Copilot voi kutsua sovelluksen agentin ja käsitellä sen tietosisältöä
+- Jos sovellusta ei ole liitetty → Copilot ei voi käyttää sitä → ei hallintaa → mahdollinen shadow AI ‑riski
+
+---
+
+## 📌 Yhteenveto
+
+- Shadow AI = tekoälyn käyttö ilman lupaa, ohjeita tai valvontaa
+- Copilot Studio = vaatii lisenssin, mutta tarjoaa kokeiluversioita
+- Agenttien hallinta = Block/Deploy-malli antaa kontrollin
+- Copilot Channel = määrittää, voiko Copilot käyttää sovellusta
+- Riskit = datavuoto, compliance-rikkomukset, näkyvyyden puute
+
+---
+
+## ✅ Suositus organisaatioille
+
+- Laaditaan selkeät AI-politiikat ja hyväksyntäprosessit
+- Määritellään roolikohtaiset käyttöoikeudet ja tekniset kontrollit
+- Valvotaan AI-työkalujen käyttöä ja koulutetaan henkilöstöä
 
