@@ -115,4 +115,257 @@ Shadow AI ‑käyttöä on havaittu seuraavissa tilanteissa:
 
 Pilvipalveluihin liittyvä AI-työkalujen käyttö on hallittava selkeästi, jotta datan siirtyminen, säilytys ja käyttö tapahtuvat organisaation politiikkojen mukaisesti. Ilman valvontaa syntyy tekninen ja sääntelyyn liittyvä riski, joka voi johtaa tietovuotoihin ja compliance-rikkomuksiin.
 
+---
+
+# Shadow AI: miksi ilmiö yleistyy ja mitä siitä seuraa
+
+## 🔵 Miksi Shadow AI yleistyy?
+
+### 1) Tekoäly on kaikkialla
+
+- VS Code
+- Azure
+- Canva
+- Copilot
+- ChatGPT
+- selainlaajennukset
+- mobiilisovellukset
+
+Tekoälyä on integroitu työkaluihin — käyttöä ei aina havaita tai ymmärretä.
+
+### 2) Ilmaisversiot ovat liian helppoja
+
+- Ei vaadita asennuksia
+- Ei vaadita tunnuksia
+- Ei vaadita hyväksyntää
+- Käyttö onnistuu suoraan selaimessa
+
+Esimerkki: ChatGPT avataan selaimessa → “kirjoita nopeasti”. Mutta ei huomata, että data siirtyy ulos.
+
+### 3) Käyttäjät eivät ymmärrä datan arvoa
+
+- Ei tunnisteta, mikä on sisäistä
+- Ei tunnisteta, mikä on luottamuksellista
+- Ei tunnisteta, mikä on henkilötietoa
+- Ei tunnisteta, mikä on sopimuksilla suojattua
+
+### 4) Organisaatiot eivät ole ehtineet ohjeistaa
+
+- Ei ole AI-politiikkaa
+- Ei ole hyväksyntäprosessia
+- Ei ole koulutusta
+- Ei ole teknistä valvontaa
+
+### 5) Käyttäjät haluavat olla tehokkaita
+
+- Työ halutaan tehdä nopeasti
+- AI-työkalu ratkaisee ongelman heti
+- Ei haluta odottaa IT:n hyväksyntää
+
+---
+
+## 🟢 Mitä jatkossa pitää ottaa huomioon?
+
+### 1) Tällaisia tilanteita esiintyy
+
+- Kehittäjät, markkinointi, HR, johto, asiakaspalvelu, opiskelijat, harjoittelijat, freelancerit ja ulkoiset
+- Käyttö tapahtuu työkalun sisällä, ilman että AI-ikkuna tunnistetaan
+
+### 2) Dataa ei saa siirtää hallitusta ympäristöstä
+
+- Azure-tenantin ulkopuolelle
+- VS Code -laajennuksen kautta
+- Henkilökohtaiselle tilille
+- Ei-hyväksyttyyn palveluun
+
+### 3) Ellei se syötetä nimittäin, mikä ei ole julkista
+
+- Julkinen tieto on sallittua
+- Sisäinen tieto, henkilötiedot, sopimustieto, API-avaimet, konfiguraatiot → ei saa syöttää
+
+### 4) Käyttäjän pitää ymmärtää, että AI = ulkopuolinen palvelu
+
+- AI-palvelu ei ole osa organisaation sisäistä järjestelmää
+- Data siirtyy ulos, ellei käytetä hallittua instanssia
+
+---
+
+## 🔵 Mitä perehdytyksessä ja koulutuksessa pitäisi opettaa?
+
+### 1) Selkeä peruslähtö
+
+- AI ei ole neutraali
+- AI ei ole organisaation sisäinen sovellus
+- AI ei ole automaattisesti turvallinen
+
+### 2) Tietoturva- ja ympäristöperustelu
+
+- Data siirtyy ulos
+- Dataa ei voida poistaa
+- Dataa ei voida jäljittää
+- Dataa voidaan käyttää mallin koulutukseen
+
+### 3) Käytännön esimerkit
+
+- Koodin syöttäminen
+- CV:n syöttäminen
+- Projektisuunnitelman syöttäminen
+- API-avaimen syöttäminen
+- Konfiguraation syöttäminen
+
+### 4) Turvalliset vaihtoehdot
+
+- Käytetään organisaation hallittua AI-ympäristöä
+- Käytetään hyväksyttyjä työkaluja
+- Käytetään yritystiliä
+
+---
+
+## 🔴 Mitä tehdä, jos virhe tapahtuu?
+
+### 1) Pitää reagoida
+
+- Lokitus
+- Ilmoitus
+- Poisto
+- Koulutus
+
+### 2) Järjestelmänvalvoja vs. siviili
+
+#### Järjestelmänvalvoja
+
+- Tunnistaa riskin
+- Varmistaa lokituksen
+- Varmistaa ohjeistuksen
+- Varmistaa valvonnan
+- Varmistaa teknisen suojauksen
+
+#### Siviili / yksityishenkilö
+
+- Ei tunnista riskiä
+- Ei tiedä, mitä tapahtui
+- Ei tiedä, mihin data meni
+- Ei tiedä, miten AI toimii
+
+---
+
+## 🟣 Yhteenveto yhdellä lauseella
+
+Shadow AI syntyy, kun tekoälyä käytetään ilman valvontaa, ohjeistusta tai organisaation hyväksyntää. Se uhkaa yksityisyyttä, IT- ja tietoturvaa, sääntelyä ja sopimuksia. Käyttö voi tapahtua selaimessa, editorissa, pilvipalvelussa, työkalussa tai mobiilissa.
+
+---
+
+## 🔵 Voiko shadow AI koskea robotiikkaa?
+
+Kyllä, jos:
+
+- Robotti käyttää AI-mallia
+- Robotti käyttää ulkoista mallipalvelua
+- Robotti käyttää henkilökohtaista tiliä
+- Robotti käyttää ei-hyväksyttyä laajennusta
+
+### Missä kohtaa shadow AI syntyy robotiikassa?
+
+- Kun robotti käyttää AI-palvelua, jota ei ole hyväksytty
+- Kun robotti käyttää mallia, joka ei ole hallittu
+- Kun robotti käyttää dataa, joka ei ole julkista
+- Kun robotti käyttää henkilökohtaista tiliä
+
+---
+
+## 🟣 Logistiikka, automaatio ja teollisuus
+
+Shadow AI voi syntyä, kun:
+
+- Käytetään AI-laajennusta ilman hyväksyntää
+- Käytetään henkilökohtaista tiliä
+- Käytetään ei-hallittua mallipalvelua
+- Syötetään sisäistä dataa AI:hin
+- Käytetään AI:ta ilman lokitusta tai valvontaa
+
+---
+
+## 🟢 Mobiilimaailma ja shadow AI
+
+Shadow AI syntyy, jos:
+
+- Käytetään AI-sovellusta ilman hyväksyntää
+- Käytetään henkilökohtaista tiliä
+- Syötetään sisäistä dataa
+- Käytetään AI:ta ilman valvontaa
+
+---
+
+## 🔴 Miten tämä liittyy Kiinaan, Pohjois-Koreaan ja muihin rajoitettuihin maihin?
+
+### Kiina ja Pohjois-Korea
+
+- AI-palvelut voivat olla estettyjä
+- AI-palvelut voivat olla valvottuja
+- Dataa ei voida siirtää vapaasti
+
+Shadow AI on poliittisesti estetty:
+
+- Kaikki AI-palvelut eivät ole sallittuja
+- Käyttö voi olla valvonnan alla
+- Data pysyy maan sisällä
+
+---
+
+## 🟢 Eurooppa, USA ja muut avoimet markkinat
+
+- AI-palvelut ovat saatavilla
+- Käyttö voi tapahtua ilman valvontaa
+- Data voi siirtyä ulos
+- Shadow AI voi syntyä helposti
+
+---
+
+## 🔵 Yhteenveto mustavalkoisesti
+
+Shadow AI koskee:
+
+- Selaimia
+- VS Codea
+- Azurea
+- ChatGPT:tä
+- Copilotia
+- mobiilisovelluksia
+- laajennuksia
+- pilvipalveluita
+- robotiikkaa
+- logistiikkaa
+- teollisuutta
+
+Shadow AI syntyy, kun:
+
+- Käyttö tapahtuu ilman hyväksyntää
+- Käyttö tapahtuu ilman valvontaa
+- Käyttö tapahtuu ilman ohjeistusta
+
+---
+
+## 🔴 Kiina ja Pohjois-Korea
+
+- Käyttö on estetty
+- Käyttö on valvottua
+- Dataa ei voida siirtää vapaasti
+
+---
+
+## 🟣 Eurooppa ja USA
+
+- Käyttö on avointa
+- Käyttö voi tapahtua ilman valvontaa
+- Shadow AI syntyy helposti
+
+---
+
+## 🟢 Yksi lause, joka kiteyttää kaiken
+
+Shadow AI syntyy, kun tekoälyä käytetään ilman hyväksyntää, valvontaa, ohjeistusta, mallipalvelun hallintaa tai sopimuksia. Käyttö voi tapahtua selaimessa, editorissa, mobiilissa, robotiikassa, teollisuudessa tai pilvipalvelussa — ja se voi johtaa datavuotoihin, sääntelyrikkomuksiin ja hallinnan menetykseen.
+
+
+
+
 
