@@ -1,4 +1,4 @@
-<img width="466" height="19" alt="image" src="https://github.com/user-attachments/assets/580cb48e-3926-4381-b820-5a3984a7a188" /># Shadow AI – käytännön esimerkit ja tietoturvapolut
+# Shadow AI – käytännön esimerkit ja tietoturvapolut
 
 Tässä osiossa esitetään kokonaisia esimerkkejä siitä, miten shadow AI ‑tilanteet syntyvät, miten tietovuoto tapahtuu teknisesti ja milloin tekoälyn käyttö on turvallista. Kaikki esimerkit on säilytetty alkuperäisessä muodossaan ja esitetään passiivisesti.
 
