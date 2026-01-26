@@ -74,3 +74,45 @@ Seuraavat kysymykset on nostettu esiin arkkitehtitasolla:
 Shadow AI aiheuttaa tietoturvariskejä, jotka yhdistävät datavuodot, credential-vuodot, GDPR-rikkomukset ja supply-chain-riskit. Minimivaatimuksena on varmistaa näkyvyys, valvonta, ohjeistus ja turvallinen vaihtoehto.
 
 AI-palvelut, VS Code ‑laajennukset ja muut sisäänrakennetut AI-chatit voivat muodostaa shadow AI ‑riskin, jos niitä käytetään ilman valvontaa — riippumatta siitä, onko käyttöliittymä osa selainta, Azurea, VS Codea tai erillistä sovellusta.
+
+---
+
+# Pilvipalvelut ja VS Code: shadow AI ‑riskit työkalutasolla
+
+Tässä osiossa kuvataan, miten pilvipalveluihin ja kehitysympäristöihin liittyvät AI-työkalut voivat muodostaa shadow AI ‑riskin, mikäli niitä käytetään ilman organisaation hyväksyntää tai valvontaa.
+
+## ✔️ Milloin VS Code tai Azure AI-chat voi muuttua shadow AI:ksi?
+
+Shadow AI ‑käyttöä on havaittu seuraavissa tilanteissa:
+
+- AI-laajennus on otettu käyttöön ilman IT-osaston hyväksyntää
+- Kirjautuminen on tehty henkilökohtaisella Microsoft-tilillä
+- AI-chatille on syötetty sisältöä, kuten koodia, konfiguraatioita, API-avaimia tai asiakasdataa
+- Laajennus on lähettänyt dataa taustalla ilman käyttäjän tietoisuutta
+- Julkisia mallipalveluita on käytetty organisaation hallitun Azure OpenAI ‑instanssin sijaan
+
+## 🧪 Konkreetteja esimerkkejä
+
+- VS Code AI Tools Extension Pack on asennettu itse, ja siihen on syötetty sisäistä koodia → data on voinut päätyä ulkoiseen mallipalveluun
+- Azure AI Foundry on käytetty henkilökohtaisella tilillä → ei ole ollut yhteyttä yrityksen Azure-tenanttiin
+- VS Code AI-chat on avattu ja siihen on syötetty sisäistä dataa → data on voinut siirtyä Azureen, OpenAI:hin tai muihin palveluihin
+
+## 🔐 Tietoturva- ja tietosuojariskit
+
+- **Data-egress**: koodi, konfiguraatiot, API-avaimet ja lokitiedot voivat siirtyä palveluihin, joiden sijainti ja säilytyskäytännöt ovat tuntemattomia
+- **Retention-politiikat**: syötetty data voidaan säilyttää mallien parantamiseen, jolloin organisaatio menettää kontrollin
+- **Credential-vuodot**: .env-tiedostot, API-avaimet ja konfiguraatiot voivat vuotaa automaattisesti
+- **Näkyvyyden puute**: IT-osasto ei näe, mitä dataa on lähetetty, minne, milloin ja kenen toimesta
+
+## 🛠️ Järjestelmänvalvojan minimitieto
+
+- VS Code ‑laajennukset voivat muodostaa ulkoisia yhteyksiä mallipalveluihin
+- Azure-integraatiot voivat toimia henkilökohtaisilla tileillä myös ilman asennuksia
+- AI-chatit voivat lähettää dataa automaattisesti editorista käsin
+- Shadow AI syntyy, jos työkalua ei ole hyväksytty, DPA-sopimusta ei ole tehty, eikä liikenteestä ole näkyvyyttä
+
+---
+
+Pilvipalveluihin liittyvä AI-työkalujen käyttö on hallittava selkeästi, jotta datan siirtyminen, säilytys ja käyttö tapahtuvat organisaation politiikkojen mukaisesti. Ilman valvontaa syntyy tekninen ja sääntelyyn liittyvä riski, joka voi johtaa tietovuotoihin ja compliance-rikkomuksiin.
+
+
