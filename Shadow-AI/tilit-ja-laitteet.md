@@ -172,7 +172,7 @@ Admin voi:
 
 Admin voi valvoa vain työelämää — ei siviilielämää — eikä saa valvoa käyttäjän henkilökohtaista käyttöä. Jos käyttäjä syöttää luottamuksellista tietoa vapaa-ajalla, kyseessä on käyttäjän oma virhe.
 
-> Lyhyesti sanottuna: työasiat pidetään työajalla, mutta jotkut käyttäjät saattavat käsitellä työasioita myös työajan ulkopuolella — riippumatta siitä, onko kyseessä kiireellinen tai kriittinen tilanne (esim. terveyteen tai turvallisuuteen liittyvä).
+> Lyhyesti sanottuna: joissakin tilanteissa käyttäjät voivat käsitellä työasioita myös työajan ulkopuolella, vaikka kyse olisi vakavasta tilanteesta, jossa on hengestä ja terveydestä kyse.
 
 > Tämä on tärkeä huomio erityisesti yrityksen järjestelmänvalvojien, IT-tuen ja muun teknisen henkilöstön näkökulmasta. Kokeneiden ja kokemattomien käyttäjien kanssa on hyvä yhdessä pohtia, miten tilien ja laitteiden käyttöä voidaan ohjeistaa selkeästi ja turvallisesti. Sama pätee myös työkaluihin ja sovelluksiin, joiden käyttö voi aiheuttaa riskejä, jos ympäristöä ei hallinnoida asianmukaisesti.
 
