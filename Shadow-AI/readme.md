@@ -1,9 +1,14 @@
 # Shadow AI: määritelmä, riskit ja tekninen erittely
 
 <img src="../images/Shadow-Ai-image.jpg" width="600">
+
 # Copilot Studio, agenttien hallinta ja shadow AI: riskit ja käytännöt
 
 Shadow AI:lla tarkoitetaan tekoälyn käyttöä työtehtävissä ilman organisaation lupaa, ohjeistusta tai valvontaa. Työkalujen käyttö tapahtuu ilman IT-osaston hyväksyntää, eikä tiedetä, mitä dataa syötetään tai mihin se päätyy.
+
+
+Shadow AI ei tarkoita tekoälychättien normaalia käyttöä, vaan tilannetta, jossa niihin syötetään työdataa, luottamuksellisia tietoja tai salassa pidettäviä sisältöjä ilman organisaation lupaa. Ilmiö syntyy, kun dataa jaetaan palveluihin, joita organisaatio ei hallitse — kuten ChatGPT, Copilot, Gemini, DuckDuckAI tai muut vastaavat AI-chätit.
+
 
 > IBM: “unconsented use of an AI tool without IT approval”  
 > Gartner, Forrester, Varonis: korostetaan IT:n ja tietoturvan ulkopuolista käyttöä  
@@ -167,15 +172,16 @@ Aiemmin puhuttiin:
 
 ## 2) Miksi termi “shadow AI” syntyi? 
 
-Tekoäly toi uuden riskin: 
-🟥 Dataa syötetään palveluihin, joita organisaatio ei hallitse. 
-→ Tämä on nopeaa, helppoa, houkuttelevaa, vaikea valvoa ja vaikea estää. 
+Tekoäly toi uuden riskin: <br>
+🟥 Dataa syötetään palveluihin, joita organisaatio ei hallitse. <br>
+→ Tämä on nopeaa, helppoa, houkuttelevaa, vaikea valvoa ja vaikea estää. <br>
 → Tarvittiin uusi termi kuvaamaan tätä riskiä. 
 
 ## 3) Onko shadow AI sama asia kuin tietovuoto tai haavoittuvuus? 
 🟩 Osittain kyllä: shadow AI = tietovuoto AI-palvelun kautta 
-🟥 Ei täysin: shadow AI ei ole tekninen haavoittuvuus, vaan käytön haavoittuvuus 
-→ Ei ole bugi, ohjelmistovirhe tai hakkerointi 
+
+🟥 Ei täysin: shadow AI ei ole tekninen haavoittuvuus, vaan käytön haavoittuvuus <br> 
+→ Ei ole bugi, ohjelmistovirhe tai hakkerointi  <br>
 → Kyseessä on käyttäjän virhe, jossa data menee väärään paikkaan 
 
 ## 4) Voiko olla “ilman shadow AI:ta”? 
@@ -188,8 +194,8 @@ Tekoäly toi uuden riskin:
 → Shadow AI syntyy vain, jos data menee väärään paikkaan. 
 
 ## 5) Voiko shadow AI “kadota”? 
-🟥 Ei kokonaan 
-→ Kyseessä on käyttäytymiseen liittyvä riski, ei tekninen bugi 
+🟥 Ei kokonaan  <br>
+→ Kyseessä on käyttäytymiseen liittyvä riski, ei tekninen bugi  <br>
 → Niin kauan kuin ihmiset tekevät virheitä, käyttävät ilmaisversioita tai eivät ymmärrä riskejä, shadow AI pysyy olemassa 
 
 🟩 Mutta riskiä voidaan minimoida lähes nollaan, kun: 
