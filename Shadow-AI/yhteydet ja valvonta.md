@@ -279,3 +279,118 @@ Julkiset Wi-Fi-verkot ja junien verkot ovat suurin riski shadow AI:lle — hotsp
 > Sama pätee kaikkiin julkisiin liikenneympäristöihin, kuten lentoasemille, juniin, laivoihin ja muihin vastaaviin paikkoihin. Näissä verkoissa voi olla kymmeniä tai satoja käyttäjiä samanaikaisesti, jolloin riski kasvaa merkittävästi. Hyökkääjä voi esimerkiksi teeskennellä tarjoavansa ilmaista Wi-Fi-yhteyttä ja toteuttaa man-in-the-middle (MITM) ‑hyökkäyksen, jossa käyttäjän liikennettä tarkkaillaan ja ohjataan. Tällöin voidaan esimerkiksi kaapata sähköpostiyhteys tai syöttää dataa AI-palveluun käyttäjän puolesta — syntyy shadow AI ‑tilanne, joka kulkee mutkan kautta ja yhdistää useita hyökkäystekniikoita. Lyhyesti sanottuna: hyökkäyskeinoja on paljon, ja ne kehittyvät jatkuvasti.
 
 > Sama pätee myös hotellien Wi-Fi-verkkoihin, vaikka verkon nimi ja kertakäyttöinen salasana annetaan vastaanotosta. Kyseessä on silti julkinen ympäristö, jossa verkkoa käyttää suuri määrä vieraita ja työmatkailijoita. Tällaisissa verkoissa ei voida tietää, kuka on yhteyden toisessa päässä tai mitä laitteita verkossa on. Hyökkääjä voi esimerkiksi luoda oman tukiaseman hotellin verkon nimellä ja toteuttaa man-in-the-middle (MITM) ‑hyökkäyksen, jossa käyttäjän liikennettä tarkkaillaan tai ohjataan. Tällöin voidaan kaapata sähköpostiyhteyksiä, ohjata liikennettä vääriin palveluihin tai jopa aiheuttaa shadow AI ‑tilanteita käyttäjän huomaamatta. Lyhyesti sanottuna: julkisissa verkoissa hyökkäyskeinoja on paljon, ja ne kehittyvät jatkuvasti.
+
+
+---
+
+## 10) Shadow AI, nettiyhteys ja IoT-laitteet
+
+### 1) Tapahtuuko shadow AI vain, jos on nettiyhteys?
+
+🟩 Kyllä — lähes aina.
+
+Shadow AI syntyy vain, jos data:
+
+- lähetetään ulkopuoliseen palveluun  
+- kulkee internetin yli  
+- päätyy palveluntarjoajan malliin  
+- tallentuu lokitietoihin  
+- voi päätyä mallin koulutukseen  
+
+→ Ilman nettiyhteyttä ei synny shadow AI:ta, koska data ei poistu laitteesta.
+
+**Poikkeus:**  
+Jos käytössä on offline-AI-malli, kuten:
+
+- paikallinen LLM  
+- suljettu edge-malli  
+- yrityksen sisäinen offline-malli  
+
+→ Shadow AI:ta ei synny, koska data ei lähde ulos.
+
+---
+
+### 2) Entä IoT-laitteet?
+
+🟥 IoT-laitteet ovat lähes aina yhteydessä internetiin.
+
+Esimerkkejä:
+
+- älylukot  
+- kamerat  
+- sensorit  
+- logistiikkalaitteet  
+- tuotantolaitteet  
+- älyvalot  
+- älypistorasiat  
+
+Nämä laitteet:
+
+- lähettävät dataa pilveen  
+- käyttävät API-rajapintoja  
+- tekevät automaattisia POST-pyyntöjä  
+- voivat sisältää haavoittuvuuksia  
+- voivat vuotaa dataa ilman käyttäjän huomiota  
+
+🟥 IoT + AI = uusi riskikerros
+
+Jos IoT-dataa syötetään AI-palveluun (esim. analysointia varten), syntyy:
+
+- tietovuoto  
+- shadow AI  
+- mahdollinen turvallisuusriski  
+- mahdollinen toimitusketjuriski  
+
+**Esimerkkejä:**
+
+- varaston robotin lokit → ChatGPT Free  
+- kameran kuvat → Gemini Free  
+- sensoridata → Copilot Free  
+
+→ Tämä muodostaa suoran shadow AI ‑tilanteen.
+
+---
+
+### 3) Entä haavoittuvuudet?
+
+IoT-laitteet ovat tunnetusti:
+
+- huonosti päivitettyjä  
+- huonosti suojattuja  
+- ilman salattua liikennettä  
+- ilman lokitusta  
+
+→ Tämä tarkoittaa:
+
+🟥 IoT-laitteet voivat vuotaa dataa ilman AI:ta
+
+Esimerkiksi:
+
+- kamerat voivat lähettää kuvia ulkopuolelle  
+- sensorit voivat lähettää dataa valmistajan pilveen  
+- älylukot voivat lähettää lokitietoja  
+
+→ Shadow AI ei ole mukana, mutta data silti vuotaa.
+
+🟥 IoT-laitteet voivat vuotaa dataa AI:n kautta
+
+Jos IoT-dataa syötetään AI-palveluun, syntyy:
+
+- shadow AI  
+- tietovuoto  
+- mahdollinen sopimusrikkomus  
+- mahdollinen GDPR-rikkomus  
+
+---
+
+### 4) Yhteenveto selkeästi
+
+| Ilmiö | Riski | Selitys |
+|-------|------|---------|
+| Shadow AI | 🟩 Vaatii nettiyhteyden | Ilman internetiä data ei siirry AI-palveluun |
+| IoT-laitteet | 🟥 Riskialttiita | Lähes aina verkossa, voivat vuotaa dataa |
+| IoT + AI | 🟥 Korkea riskitaso | AI-palveluun syötetty IoT-data muodostaa shadow AI:n |
+| Offline-AI | 🟦 Turvallisin | Paikallinen malli ei siirrä dataa ulos |
+
+🟦 Yksi lause, joka kiteyttää kaiken  
+Shadow AI syntyy vain, kun data lähtee internetin yli — ja IoT-laitteet ovat erityisen riskialttiita, koska ne ovat lähes aina verkossa ja voivat vuotaa dataa huomaamatta.
