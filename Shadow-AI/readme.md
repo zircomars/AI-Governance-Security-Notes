@@ -7,7 +7,7 @@
 Shadow AI:lla tarkoitetaan tekoälyn käyttöä työtehtävissä ilman organisaation lupaa, ohjeistusta tai valvontaa. Työkalujen käyttö tapahtuu ilman IT-osaston hyväksyntää, eikä tiedetä, mitä dataa syötetään tai mihin se päätyy.
 
 
-Shadow AI ei tarkoita tekoälychättien normaalia käyttöä, vaan tilannetta, jossa niihin syötetään työdataa, luottamuksellisia tietoja tai salassa pidettäviä sisältöjä ilman organisaation lupaa. Ilmiö syntyy, kun dataa jaetaan palveluihin, joita organisaatio ei hallitse — kuten ChatGPT, Copilot, Gemini, DuckDuckAI tai muut vastaavat AI-chätit.
+Shadow AI ei tarkoita tekoälychättien normaalia käyttöä, vaan tilannetta, jossa niihin syötetään työdataa, luottamuksellisia tietoja, salassa pidettäviä sisältöjä, omia henkilökohtaisia tietoja ja/tai yrityksen sisäisiä  tietoja ilman organisaation lupaa. Ilmiö syntyy, kun dataa jaetaan palveluihin, joita organisaatio ei hallitse — kuten ChatGPT, Copilot, Gemini, DuckDuckAI tai muut vastaavat AI‑chätit.
 
 
 > IBM: “unconsented use of an AI tool without IT approval”  
