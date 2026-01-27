@@ -6,6 +6,9 @@ Yhteyksien kautta sovellukset, verkkosivustot ja palvelut saavat yhteyden intern
 
 → Shadow AI voi syntyä missä tahansa yhteydessä, jos tekninen valvonta puuttuu tai ohitetaan. Siksi yhteyksien hallinta on olennainen osa tietoturvaa ja AI-politiikkaa.
 
+> Pieni mindmap kun tapahtuu Shadow AI yhteydessä - kun käyttäjä tarvii tekoäly chättin ja mahdolliset riskit. 
+<img src="images/verkkoyhteys-shadowai.png" width="500">
+
 ### 1) VPN (Virtual Private Network)
 
 ✅ VPN suojaa liikennettä, mutta ei estä shadow AI:ta.
@@ -110,3 +113,170 @@ MDM voi:
 
 🟦 Yksi lause, joka kiteyttää kaiken  
 VPN, RDP ja Wi-Fi suojaavat yhteyttä, mutta vain MDM ja verkon valvonta voivat estää shadow AI:n syntymisen — erityisesti mobiililaitteissa ja hotspot-yhteyksissä.
+
+---
+
+# Shadow AI – Wi-Fi-verkot, hotspotit ja mobiiliverkkojen riskit
+
+## 1) Kotiverkko
+
+✅ Turvallinen, jos verkko on hallinnassa.
+
+Kodin Wi-Fi on yleensä:
+
+- salattu (WPA2/WPA3)  
+- yksityinen  
+- käytännön hallinnassa  
+- VPN-yhteys käytössä (jos saatavilla)  
+
+**Shadow AI -riski:**  
+→ Normaali, ei erityisen korkea.
+
+**Adminin ohjeistus:**
+
+- VPN-yhteyttä suositellaan  
+- AI-palveluihin ei tule syöttää työdataa  
+- AI-tilejä ei tule käyttää ilman ohjeistusta  
+- Vain yrityksen hyväksymiä AI-työkaluja tulee käyttää  
+
+---
+
+## 2) Yrityksen Wi-Fi
+
+✅ Turvallisin vaihtoehto.
+
+Yrityksen verkossa on:
+
+- proxy  
+- DNS-valvonta  
+- DLP  
+- CASB  
+- domain-estot  
+- lokitus  
+
+**Shadow AI -riski:**  
+→ Matala, koska valvonta toimii.
+
+**Adminin ohjeistus:**
+
+- AI-käyttö kulkee yrityksen valvonnan läpi  
+- Henkilökohtaiset AI-tilit voidaan estää  
+- Epäilyttävä käyttö voidaan havaita  
+
+---
+
+## 3) Julkiset Wi-Fi-verkot (kauppakeskus, kirjasto, kahvila)
+
+❌ Erittäin riskialtis.
+
+Julkisissa verkoissa:
+
+- ei ole salasanaa tai se on heikko  
+- liikenne voidaan kaapata  
+- ei ole yrityksen valvontaa  
+- ei ole DLP/CASB-suojauksia  
+- ei ole DNS-estojärjestelmiä  
+
+**Shadow AI -riski:**  
+→ Korkea, koska:
+
+- dataa voidaan syöttää AI-palveluihin ilman valvontaa  
+- henkilökohtaisia AI-tilejä voidaan käyttää  
+- arkaluontoisia tietoja voidaan käsitellä  
+- MITM-hyökkäyksille altistutaan  
+
+**Adminin ohjeistus:**
+
+- Julkista Wi-Fiä ei tule käyttää ilman VPN:ää  
+- Puhelimen hotspotia suositellaan  
+- Luottamuksellista dataa ei tule käsitellä julkisessa verkossa  
+- AI-palveluita ei tule käyttää julkisessa verkossa  
+
+---
+
+## 4) Junan Wi-Fi
+
+❌ Sama riski kuin kahvilassa.
+
+Junan Wi-Fi on:
+
+- jaettu  
+- valvomaton  
+- usein salasanaton  
+- ruuhkainen  
+- altis hyökkäyksille  
+
+**Shadow AI -riski:**  
+→ Korkea, koska:
+
+- yrityksen valvonta ei toimi  
+- dataa voidaan syöttää AI-palveluihin ilman estoa  
+- hyökkäysriski on korkea  
+
+✅ Parempi vaihtoehto:  
+→ Puhelimen hotspotin käyttö, koska:
+
+- yhteys on yksityinen  
+- yhteys on salattu  
+- liikennettä ei jaeta muiden kanssa  
+- MITM-hyökkäyksiltä voidaan suojautua  
+
+---
+
+## 5) Hotspot
+
+✅ Paras vaihtoehto julkisissa paikoissa.
+
+Hotspot on:
+
+- yksityinen  
+- salattu  
+- käyttäjän hallinnassa  
+- ei jaettu muiden kanssa  
+
+**Shadow AI -riski:**  
+→ Matala, mutta vain jos:
+
+- VPN-yhteys on käytössä  
+- työdataa ei syötetä henkilökohtaiseen AI-palveluun  
+
+---
+
+## 6) MDM (Mobile Device Management)
+
+✅ MDM ratkaisee suurimman osan ongelmista.
+
+MDM voi:
+
+- pakottaa VPN:n käyttöön  
+- estää AI-sovellusten asennuksen  
+- estää henkilökohtaisten tilien käytön  
+- estää datan kopioinnin AI-palveluihin  
+- valvoa sovelluksia ja liikennettä  
+
+**Shadow AI -riski:**  
+→ Matala, jos MDM on käytössä ja konfiguroitu oikein.
+
+---
+
+## 7) Yhteenveto taulukkomuodossa
+
+| Yhteysympäristö | Shadow AI -riski | Suositus |
+|-----------------|------------------|----------|
+| Kotiverkko      | Matala           | VPN + yrityksen AI |
+| Yrityksen Wi-Fi | Erittäin matala  | Paras vaihtoehto |
+| Julkinen Wi-Fi  | Korkea           | Käytä hotspotia |
+| Junan Wi-Fi     | Korkea           | Käytä hotspotia |
+| Hotspot         | Matala           | Paras julkisissa paikoissa |
+| MDM             | Erittäin matala  | Pakollinen yrityksille |
+
+---
+
+## 8) Yksi lause, joka kiteyttää kaiken
+
+Julkiset Wi-Fi-verkot ja junien verkot ovat suurin riski shadow AI:lle — hotspotin ja VPN:n käyttöä suositellaan, ja järjestelmänvalvojan tehtävänä on ohjeistaa selkeästi, mitä AI-palveluita saa käyttää missäkin verkossa.
+
+> Sama pätee kaikkiin julkisiin liikenneympäristöihin, kuten lentoasemille, juniin, laivoihin ja muihin vastaaviin paikkoihin. Näissä verkoissa voi olla kymmeniä tai satoja käyttäjiä samanaikaisesti, jolloin riski kasvaa merkittävästi. Hyökkääjä voi esimerkiksi teeskennellä tarjoavansa ilmaista Wi-Fi-yhteyttä ja toteuttaa man-in-the-middle (MITM) ‑hyökkäyksen, jossa käyttäjän liikennettä tarkkaillaan ja ohjataan. Tällöin voidaan esimerkiksi kaapata sähköpostiyhteys tai syöttää dataa AI-palveluun käyttäjän puolesta — syntyy shadow AI ‑tilanne, joka kulkee mutkan kautta ja yhdistää useita hyökkäystekniikoita. Lyhyesti sanottuna: hyökkäyskeinoja on paljon, ja ne kehittyvät jatkuvasti.
+
+
+
