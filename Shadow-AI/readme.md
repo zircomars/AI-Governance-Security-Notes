@@ -149,3 +149,68 @@ Agenttien käyttöä hallitaan samalla tavalla kuin sovelluksia:
 - Määritellään roolikohtaiset käyttöoikeudet ja tekniset kontrollit
 - Valvotaan AI-työkalujen käyttöä ja koulutetaan henkilöstöä
 
+---
+
+## 1) Mitä jos shadow AI ei olisi olemassa? 
+
+Shadow AI on uusi nimi vanhalle ongelmalle. 
+
+Aiemmin puhuttiin: 
+- tietovuodoista
+- datan väärinkäytöstä
+- haavoittuvuuksista
+- vääristä käyttöoikeuksista
+- varjopalveluista (shadow IT)
+- epäluotettavista kolmannen osapuolen palveluista
+
+→ Ilmiö olisi olemassa, vaikka termiä ei olisi. 
+
+## 2) Miksi termi “shadow AI” syntyi? 
+
+Tekoäly toi uuden riskin: 
+🟥 Dataa syötetään palveluihin, joita organisaatio ei hallitse. 
+→ Tämä on nopeaa, helppoa, houkuttelevaa, vaikea valvoa ja vaikea estää. 
+→ Tarvittiin uusi termi kuvaamaan tätä riskiä. 
+
+## 3) Onko shadow AI sama asia kuin tietovuoto tai haavoittuvuus? 
+🟩 Osittain kyllä: shadow AI = tietovuoto AI-palvelun kautta 
+🟥 Ei täysin: shadow AI ei ole tekninen haavoittuvuus, vaan käytön haavoittuvuus 
+→ Ei ole bugi, ohjelmistovirhe tai hakkerointi 
+→ Kyseessä on käyttäjän virhe, jossa data menee väärään paikkaan 
+
+## 4) Voiko olla “ilman shadow AI:ta”? 
+🟩 Kyllä, jos: - käytetään vain hallittuja AI-työkaluja 
+- ei syötetä arkaluonteista dataa
+- käytetään offline-AI:ta
+- käytetään esimerkkidataa
+- käytetään henkilökohtaista AI:ta vain henkilökohtaisiin asioihin
+
+→ Shadow AI syntyy vain, jos data menee väärään paikkaan. 
+
+## 5) Voiko shadow AI “kadota”? 
+🟥 Ei kokonaan 
+→ Kyseessä on käyttäytymiseen liittyvä riski, ei tekninen bugi 
+→ Niin kauan kuin ihmiset tekevät virheitä, käyttävät ilmaisversioita tai eivät ymmärrä riskejä, shadow AI pysyy olemassa 
+
+🟩 Mutta riskiä voidaan minimoida lähes nollaan, kun: 
+- tarjotaan turvalliset AI-työkalut
+- käyttäjät koulutetaan
+- data-rajat selitetään
+- tilit erotetaan
+- tekniset estot otetaan käyttöön 
+
+## 6) Yhteenveto Shadow AI = datan vuotaminen väärään paikkaan. 
+→ Ei katoa kokonaan, mutta voidaan estää lähes täysin, kun käyttäjät ymmärtävät, mitä dataa saa syöttää ja mihin.
+
+
+
+
+
+
+
+
+
+
+
+
+
