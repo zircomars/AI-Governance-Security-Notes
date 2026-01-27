@@ -277,3 +277,107 @@ Jos järjestelmänvalvojan tai IT-tuen oletettaisiin valvovan jokaisen käyttäj
 Tekniset kontrollit ja selkeät pelisäännöt ovat siksi välttämättömiä. Ilman niitä järjestelmänvalvojan oma työkuorma kasvaisi hallitsemattomaksi, ja ohjeistuksen kehittäminen voisi pysähtyä, kun ideat ja keinot loppuvat. Digitaalinen ympäristö kehittyy nopeasti, ja uusia riskejä syntyy jatkuvasti.
 
 Jos organisaation sisäiset säännöt tai osaaminen eivät riitä, on suositeltavaa hakea lisäohjeistusta suuremmilta toimijoilta, kuten viestintä-, tietoturva- ja tietosuojaviranomaisilta sekä kyberturvallisuuden asiantuntijoilta. Näiltä tahoilta voidaan saada ajantasaisia neuvoja, uutiskirjeitä, koulutuksia ja webinaareja, jotka tukevat organisaation omaa AI-politiikkaa ja riskienhallintaa.
+
+
+---
+---
+
+## 16) Shadow AI – valvonta, lokitus ja käytännön seuranta
+
+Järjestelmänvalvojan ja IT-tuen näkökulmasta shadow AI vaatii uudenlaista valvontaa, lokitusta ja politiikkaa. Kyse ei ole teknisestä haavoittuvuudesta, vaan käyttäytymiseen liittyvästä riskistä.
+
+### 1) Miksi shadow AI on erityinen haaste?
+
+Shadow AI ei näy perinteisissä lokitiedoissa, kuten:
+
+- kirjautumiset  
+- tiedostojen siirrot  
+- verkkoliikenne  
+
+Shadow AI syntyy, kun:
+
+- dataa syötetään ulkopuoliseen AI-palveluun  
+- henkilökohtaista AI-tiliä käytetään työtehtävään  
+- AI-laajennuksia asennetaan IDE:hen tai selaimeen  
+- dataa käytetään ilman ohjeistusta tai hallintaa  
+
+---
+
+### 2) Tärkeimmät lokit ja seurannat shadow AI:n havaitsemiseksi
+
+**A) Verkkoliikenteen analyysi**  
+- DNS-kyselyt AI-palveluihin  
+- HTTP/S POST-pyynnöt, joissa näkyy datan siirto  
+- proxy- tai firewall-logit  
+
+**B) SSO- ja identiteettilokit**  
+- henkilökohtaisten AI-palvelutilien tunnistus  
+- OAuth-kytkennät (esim. GitHub → ChatGPT)  
+- epäilyttävät token-pyynnöt  
+
+**C) Sovellusten ja laajennusten seuranta**  
+- VS Code -laajennukset (Copilot, CodeWhisperer)  
+- selainlaajennukset (ChatGPT Extension, AI Summary Tools)  
+- mobiilisovellukset, jotka käyttävät AI:ta  
+
+**D) DLP (Data Loss Prevention)**  
+- asiakastiedon, sopimusten ja koodin kopioinnin tunnistus  
+- datan siirron estäminen AI-palveluihin  
+
+**E) CASB (Cloud Access Security Broker)**  
+- varjopalveluiden tunnistus  
+- pääsyn estäminen epätoivottuihin AI-palveluihin  
+- sovellusten ja tilien käytön näkyvyys  
+
+**F) Microsoft Defender / Sentinel / Google Chronicle**  
+- epäilyttävän AI-käytön tunnistus  
+- verkkoliikenteen ja riskien analysointi  
+- ulkomaan käyttöjen ja luvattoman toiminnan tunnistus  
+
+---
+
+### 3) Tärkeimmät ominaisuudet shadow AI:n hallintaan
+
+| Ominaisuus | Miksi tärkeä |
+|------------|--------------|
+| SSO-erottelu | Estää henkilökohtaisen tilin käytön työdataan |
+| DLP-säännöt | Estää datan vuodon AI-palveluihin |
+| CASB-näkyvyys | Näkee mitä AI-palveluita käytetään |
+| Proxy/DNS-logitus | Näkee mihin AI-palveluihin data liikkuu |
+| Sovellusvalvonta | Näkee AI-laajennukset ja sovellukset |
+| Käyttöehdot ulkomaan kirjautumista | Estää epäilyttävän käytön |
+| Käyttöpolitiikat ja ohjeistukset | Vähentää vahingossa tapahtuvaa shadow AI:ta |
+
+---
+
+### 4) Kolmannen osapuolen AI-palvelut (esim. Adobe AI)
+
+Jos ohjeistusta ei ole, käyttäjä voi kokeilla AI-ominaisuuksia virheellisesti.  
+Esimerkiksi Adobe Firefly, Sensei, Illustrator AI voivat:
+
+- lähettää dataa pilveen  
+- vastaanottaa asiakastietoa, sopimuksia, koodia  
+- aiheuttaa shadow AI -tilanteen, jos tili on henkilökohtainen  
+- aiheuttaa datavuodon tai sopimusrikkomuksen  
+
+✅ Järjestelmänvalvojan tehtävänä on:
+
+- määrittää, mitä AI-palveluita saa käyttää  
+- määrittää, millä tilillä niitä saa käyttää  
+- valvoa, että ohjeita noudatetaan  
+
+---
+
+### 5) Yhteenveto selkeästi
+
+Jos AI ei näy perinteisissä lokitiedoissa → tarvitaan uutta valvontaa:
+
+- verkkoliikenne  
+- SSO  
+- DLP  
+- CASB  
+- sovellusseuranta  
+- politiikat  
+
+Järjestelmänvalvojan tehtävänä on estää datan vuoto AI-palveluihin, joihin ei ole hyväksyntää, ja varmistaa, että henkilökohtaisia tilejä ei käytetä työtehtäviin.
+
