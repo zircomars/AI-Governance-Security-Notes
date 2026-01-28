@@ -159,8 +159,21 @@ Jos API-avain vuotaa, sen sijaintia ei voida jäljittää täysin.
 ---
 ---
 
-![](/images/API-vuotaminen-malli.png)
+# Pieni malli skenaario
 
+<img src="./images/API-vuotaminen-malli.png" width="500">
+
+Tämä osio kuvaa lyhyesti, mitä tapahtuu tilanteessa, jossa käyttäjä, testaaja tai ohjelmistokehityksen parissa työskentelevä henkilö syöttää API‑avaimen tekoälyn chattiin. Tällainen toiminta muodostaa käytännössä Shadow AI ‑tilanteen, koska avain voi päätyä ympäristöihin, joita ei hallita.
+
+> 📅 Kirjoitettu tammikuussa 2026. Sisältö voi päivittyä tai muuttua myöhemmin.
+
+Lyhyesti tapahtumaketjusta: 
+- Kun API‑avain syötetään tekoälyn chattiin, se voi päätyä ulkopuolisten nähtäväksi.
+  - Tekoälypalveluihin jää yleensä lokitusta, ja avain voi tallentua tai vuotaa yhteyksien kautta.
+- Hyökkääjien näkökulmasta avainta testataan automaattisesti eri ympäristöissä, ja sitä voidaan hyödyntää AI‑pentestauksessa tai muissa hyökkäysmenetelmissä.
+  - Avaimen voimassaolo määrittää, kuinka pitkään sitä voidaan käyttää väärin.
+  - Jos avain saadaan toimimaan, sitä voidaan käyttää kiristämiseen, phishing‑hyökkäyksiin tai laskutuksen väärinkäyttöön.
+- Jos avain löytyy haavoittuvuusskannauksissa ja palveluntarjoaja (Azure, AWS, Google) tunnistaa sen omakseen, reagointi tapahtuu yleensä viiveellä.
 
 
 
