@@ -156,4 +156,11 @@ Jos API-avain vuotaa, sen sijaintia ei voida jäljittää täysin.
 → Hyökkääjä voi tunnistaa avaimen, testata sen ja käyttää sitä väärin.  
 → Ainoa oikea toimenpide on poistaa avain, luoda uusi ja rajoittaa sen käyttöoikeuksia.
 
+---
+---
+
+![](/images/API-vuotaminen-malli.png)
+
+
+
 
