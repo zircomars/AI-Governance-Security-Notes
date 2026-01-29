@@ -1,6 +1,6 @@
 # EU AI act
 
-# EU AI Act – yhteenveto ja soveltaminen organisaatioille
+# EU AI Act – yhteenveto ja soveltaminen
 
 EU AI Act on Euroopan unionin yhteinen tekoälyasetus, joka säätelee sekä tekoälyn kehittämistä että käyttöönottoa. Asetus ei koske vain mallien rakentajia, vaan myös organisaatioita, jotka ottavat tekoälyä käyttöön omissa prosesseissaan.
 
