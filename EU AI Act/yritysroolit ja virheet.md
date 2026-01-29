@@ -86,3 +86,26 @@ Virheiden taustalla on se, että EU AI Act:
 
 Organisaatiot eivät ole tottuneet siihen, että pelkkä AI:n käyttö voi tuoda sääntelyvelvoitteita.
 
+---
+
+# 🟦 1. Roolikaavio: Provider / Deployer / Distributor / Importer
+
+(EU AI Actin virallisen roolijaon pohjalta)
+Roolikaavio (tekstimuotoinen, selkeä ja yksiselitteinen)
+
+ ![alt text](./images/roolikaavio.png)
+
+Roolien selitykset:
+- Provider Rakentaa, kehittää tai julkaisee AI-järjestelmän. Vastaa teknisestä dokumentaatiosta, riskienhallinnasta ja vaatimustenmukaisuudesta.
+- Distributor Ei kehitä, mutta välittää AI-järjestelmiä eteenpäin (esim. jälleenmyyjä, konsulttitalo, joka myy AI-tuotteita).
+- Importer Tuo EU:n ulkopuolelta AI-järjestelmiä EU-markkinoille.
+- Deployer Käyttää AI-järjestelmää omassa toiminnassaan (yritys, kunta, oppilaitos, palveluntarjoaja).
+
+
+
+
+
+
+
+
+
