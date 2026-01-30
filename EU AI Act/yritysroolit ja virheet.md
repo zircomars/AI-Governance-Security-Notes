@@ -377,6 +377,97 @@ Perustuen artiklaan 50:
 - Jos yritys ei kehitä eikä tarjoa AI-järjestelmiä, vaan käyttää niitä kuten mitä tahansa työkalua → velvoitteet ovat vähäiset
 
 
+---
+
+## 🧩 EU AI Act – IT/ICT-palvelut, ohjelmistokehitys ja konsultointi
+
+Yksi yleisimmistä väärinkäsityksistä EU AI Actista liittyy siihen, koskeeko laki IT/ICT-palveluita, ohjelmistokehitystä tai konsultointia. Tämä kysymys nousee jatkuvasti esiin, ja siksi se on tärkeä selventää.
+
+---
+
+### 1. Koskeeko EU AI Act IT/ICT-palveluita?
+
+Kyllä, mutta vain tietyissä rooleissa. IT/ICT-palvelut kuuluvat AI Actin piiriin vain silloin, kun ne:
+
+- **Kehittävät tai rakentavat AI-järjestelmän**  
+  → Provider  
+  Esim. yritys rakentaa oman tekoälymallin, AI-pohjaisen palvelun tai AI-ominaisuuden.
+
+- **Ottavat AI-järjestelmän käyttöön asiakkaalle**  
+  → Deployer  
+  Esim. IT-palveluyritys asentaa, konfiguroi tai integroi AI-työkalun asiakkaalle.
+
+- **Välittävät AI-järjestelmiä eteenpäin**  
+  → Distributor  
+  Esim. MSP myy AI-pohjaista SaaS-ratkaisua.
+
+- **Tuovat AI-järjestelmiä EU:n ulkopuolelta**  
+  → Importer
+
+Jos mikään näistä ei toteudu, AI Act ei koske kyseistä IT-palvelua.
+
+---
+
+### 2. Koskeeko AI Act ohjelmistoyritystä?
+
+Tämä riippuu yhdestä asiasta:
+
+🔥 **Sisältyykö ohjelmistoon tekoälyä?**
+
+- Jos EI sisälly →  
+  ❌ AI Act ei koske yritystä.  
+  Ohjelmistokehitys ilman tekoälyä ei kuulu lain piiriin.
+
+- Jos SISÄLTYY →  
+  ✅ AI Act koskee yritystä, koska yritys on silloin:  
+  - Provider, jos AI-järjestelmä rakennetaan  
+  - Deployer, jos AI:ta käytetään omassa toiminnassa  
+  - Distributor, jos AI-järjestelmiä myydään eteenpäin
+
+---
+
+### 3. Ydinperiaate, joka kannattaa muistaa
+
+**EU AI Act koskee vain tekoälyä.**  
+Jos yritys ei rakenna, käytä tai myy tekoälyä, laki ei koske sitä.
+
+---
+
+### 4. Taulukko: Koskeeko AI Act meitä?
+
+| Tilanne | Koskeeko AI Act? | Perustelu |
+|--------|-------------------|-----------|
+| IT-tuki, ylläpito, verkot, infra | ❌ Ei | Ei tekoälyä |
+| Tavallinen ohjelmisto ilman AI:ta | ❌ Ei | Ei tekoälyä |
+| Copilotin, ChatGPT:n, Midjourneyn käyttö | ✅ Kyllä | Deployer-rooli |
+| Oman AI-mallin rakentaminen | ✅ Kyllä | Provider-rooli |
+| AI-ominaisuuden lisääminen tuotteeseen | ✅ Kyllä | Provider-rooli |
+| AI-pohjaisen SaaS-palvelun myynti | ✅ Kyllä | Provider + distributor |
+| AI-työkalun integrointi asiakkaalle | ✅ Kyllä | Deployer-rooli |
+| AI-järjestelmän tuonti EU:n ulkopuolelta | ✅ Kyllä | Importer-rooli |
+
+---
+
+### 5. AI:n käyttö ja deployer-rooli
+
+EU AI Act koskee myös yrityksiä, jotka vain **käyttävät** tekoälyä.  
+Esimerkiksi yritys, joka käyttää:
+
+- Copilotia  
+- ChatGPT:tä  
+- AI-pohjaista rekrytointityökalua  
+- AI-pohjaista asiakaspalvelubottia  
+
+→ kuuluu deployer-rooliin.  
+Velvoitteet ovat kevyempiä kuin providerilla, mutta ne ovat silti voimassa.
+
+---
+
+### 6. Tiivistetty vastaus
+
+**EU AI Act koskee yritystä vain, jos se rakentaa, käyttää, myy tai tuo tekoälyä.**  
+Jos AI:ta ei ole, laki ei koske yritystä.  
+Jos AI:ta on, velvoitteet ovat voimassa.
 
 
 
