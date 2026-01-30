@@ -210,6 +210,171 @@ Kun AI-ratkaisuja tarjotaan asiakkaille:
 
 Tulee sovellettavaksi vain, jos AI-järjestelmä tai malli rakennetaan itse.
 
+----
+
+# MINIMIVELVOITTEET YRITYKSISSÄ
+
+EU AI Actin mukaan yritys kuuluu provider-rooliin, jos:
+
+1. Rakennetaan oma AI-työkalu  
+2. Aiotaan myydä sitä EU:n ulkopuolelle  
+
+EU:n virallisissa lähteissä, erityisesti EU:n digitaalisen strategian sivuilla, on listattu GPAI-mallien tarjoajien velvoitteet sekä AI Actin artiklat, jotka määrittelevät provider-velvoitteet korkean riskin järjestelmille.
+
+---
+
+## 🟦 1. Minimivelvoitteet, jos yritys rakentaa oman AI‑työkalun (provider)
+
+EU:n virallisiin lähteisiin, erityisesti EU:n digitaalisen strategian sivuihin ja AI Actin artikloihin, on määritelty provider‑roolin velvoitteet. Velvoitteet koskevat kaikkia yrityksiä, jotka kehittävät AI‑järjestelmän EU:n sisällä, riippumatta siitä, missä maassa asiakkaita on tai millä mallilla palvelua myydään (kuukausilisenssi, vuosilisenssi, kertamaksu tai SaaS‑malli).
+
+Tämä tarkoittaa käytännössä sitä, että EU:ssa toimivan yrityksen on noudatettava AI Actin vaatimuksia aina, kun oma AI‑työkalu tai -järjestelmä tuodaan markkinoille. Velvoitteet eivät riipu siitä, onko kyseessä pieni sovellus, sisäinen työkalu, kaupallinen tuote tai laaja AI‑palvelu. Velvoitteet syntyvät myös silloin, kun järjestelmää tarjotaan maksullisena versiona tai lisenssimallina.
+
+Provider‑rooliin liittyy useita käytännön kysymyksiä ja riskejä, kuten:
+
+- teknisten vaatimusten täyttäminen  
+- dokumentaation ja datayhteenvetojen laatiminen  
+- sopimusten ja lisenssiehtojen päivittäminen  
+- tietoturvan ja robustisuuden varmistaminen  
+- mahdollisten haavoittuvuuksien ja riskien arviointi  
+- testauksen ja validoinnin toteuttaminen  
+- läpinäkyvyyden ja käyttäjäinformoinnin varmistaminen  
+
+> Nämä velvoitteet koskevat kaikkia EU:ssa kehitettyjä AI‑järjestelmiä, riippumatta siitä, myydäänkö niitä EU:n sisällä vai ulkopuolelle.
+
+
+Velvoitteet riippuvat siitä, onko kyseessä:
+
+- General-purpose AI (GPAI) – yleiskäyttöinen malli  
+- High-risk AI – esim. rekrytointi, luottopäätökset  
+- Limited risk – chatbotit, generatiivinen AI  
+- Minimal risk – ei velvoitteita  
+
+Providerilla on aina vähimmäisvelvoitteita, vaikka malli olisi yleiskäyttöinen.
+
+---
+
+## 🧠 A. Minimivelvoitteet kaikille GPAI-mallien tarjoajille
+
+(EU:n virallinen lista)
+
+- Tekninen dokumentaatio  
+- Toteutettu tekijänoikeuspolitiikka  
+- Koulutusaineiston yhteenveto  
+
+Nämä ovat vähimmäisvaatimukset, vaikka malli ei olisi korkean riskin.
+
+---
+
+## 🚨 B. Jos malli on korkean riskin (High-risk AI)
+
+(velvoitteet määritelty AI Actin artiklassa 16)
+
+Providerin on toteutettava:
+
+- Riskienhallintajärjestelmä  
+- Datan laatu ja hallinta  
+- Dokumentaatio ja läpinäkyvyys  
+- Lokitus ja jäljitettävyys  
+- Ihmisen valvonta  
+- Kyberturvallisuus ja robustisuus  
+
+Nämä ovat merkittävästi raskaampia kuin GPAI-mallien minimivaatimukset.
+
+---
+
+## 💬 C. Jos malli on vain "limited risk" (esim. generatiivinen AI)
+
+(velvoitteet tulevat läpinäkyvyysartiklasta 50)
+
+- Kerrottava käyttäjälle, että AI on vuorovaikutuksessa AI:n kanssa  
+- Merkittävä syntetisoitu sisältö (deepfake-merkinnät)  
+- Kerrottava, jos käytetään tunteiden tunnistusta tai biometriaa  
+
+---
+
+## 🟩 2. Minimivelvoitteet, jos yritys aikoo myydä AI-työkalua EU:n ulkopuolelle
+
+Tämä on tärkeä kohta: EU AI Act koskee vain EU-markkinoita.  
+Mutta jos järjestelmä kehitetään EU:ssa, yritys on silti provider, vaikka myynti suuntautuisi ulkomaille.
+
+---
+
+## 🧠 A. Mitä EU vaatii, jos myynti tapahtuu EU:n ulkopuolelle?
+
+### 1) Provider-velvoitteet säilyvät, koska kehitys tapahtuu EU:ssa
+
+- Tekninen dokumentaatio  
+- Datayhteenveto  
+- Copyright-politiikka  
+- Riskienhallinta (jos korkean riskin malli)
+
+### 2) EU ei säätele ulkomaan markkinoita
+
+- USA:lla ei ole vielä liittovaltiotason AI-lakia  
+- Kiinassa GPAI-malleille on erityisiä rajoituksia  
+- Britanniassa kevyempi riskiperusteinen malli  
+- Kansainväliset järjestöt (esim. AINs) antavat suosituksia  
+
+EU ei säätele vientiä, mutta velvoitteet säilyvät, jos kehitys tapahtuu EU:ssa.
+
+---
+
+## 🔁 B. Jos malli myydään EU:n ulkopuolelle, mutta se tuodaan takaisin EU-markkinoille
+
+→ silloin AI Act pätee jälleen.
+
+---
+
+## 📦 3. Yhteenveto: Minimivelvoitteet yritykselle, joka rakentaa oman AI-työkalun
+
+### A. Minimivelvoitteet kaikille AI-kehittäjille (provider)
+
+Perustuen EU:n viralliseen GPAI-velvoitelistaan:
+
+- Tekninen dokumentaatio  
+- Tekijänoikeuspolitiikka  
+- Koulutusaineiston yhteenveto  
+
+### B. Jos malli on korkean riskin
+
+Perustuen AI Actin artiklaan 16:
+
+- Riskienhallinta  
+- Datan laatu  
+- Lokitus  
+- Läpinäkyvyys  
+- Ihmisen valvonta  
+- Kyberturvallisuus  
+
+### C. Jos malli on limited risk
+
+Perustuen artiklaan 50:
+
+- Läpinäkyvyys  
+- Deepfake-merkinnät  
+- Ilmoitus AI-vuorovaikutuksesta  
+
+### D. Myynti EU:n ulkopuolelle
+
+- EU ei rajoita vientiä  
+- Provider-velvoitteet säilyvät, koska kehitys tapahtuu EU:ssa  
+- Kohdemaan laki voi tuoda lisävaatimuksia  
+
+---
+
+## 🟦 Milloin yritys on lain piirissä?
+
+- Jos yritys kehittää omaa AI:ta → kuuluu suoraan lain piiriin (“provider”)  
+- Jos yritys ottaa käyttöön jonkun muun AI-järjestelmän (esim. ostettu, SaaS, open source) → kuuluu lain piiriin “deployer”-roolissa, jos käyttö on riskiluokassa  
+- Jos AI on integroitu omaan tuotteeseen → kuuluu lain piiriin  
+- Jos yritys tarjoaa AI-palvelua asiakkaille → kuuluu lain piiriin  
+
+---
+
+## 🟩 Milloin yritys EI yleensä ole lain piirissä?
+
+- Jos AI:ta käytetään vain matalan riskin sisäisiin tarkoituksiin (esim. tekstin tiivistys, käännökset, ideointi) → velvoitteet ovat minimissään  
+- Jos yritys ei kehitä eikä tarjoa AI-järjestelmiä, vaan käyttää niitä kuten mitä tahansa työkalua → velvoitteet ovat vähäiset
 
 
 
