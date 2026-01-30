@@ -130,3 +130,91 @@ Kaikki kolme sääntelykehystä edellyttävät:
 - AI Act tuo mukaan dokumentaatiota ja riskienhallintaa  
 - Deployer-rooli on kevyempi, mutta GDPR ja ISO 27001 ovat silti mukana  
 - Kaikki kolme yhdessä muodostavat yrityksen digi- ja datahallinnan selkärangan
+
+---
+
+# 🔷 Mitä yrityksen on vähintään tiedettävä EU AI Actin, GDPR:n ja ISO 27001:n yhteispelistä?
+
+Vaikka yrityksellä ei olisi ISO 27000 -sarjan sertifikaatteja tai suunnitelmaa niiden hankkimisesta, vähimmäisvaatimukset eivät katoa. EU AI Act, GDPR ja ISO 27001 muodostavat yhdessä perustason, jonka mukaan yrityksen on toimittava, jos tekoälyä kehitetään tai käytetään.
+
+## 🔹 1. EU AI Act – vähimmäistaso kaikille yrityksille
+EU AI Act edellyttää vähintään, että yrityksessä:
+
+- tunnistetaan AI-järjestelmät ja niiden riskiluokka  
+- tunnistetaan oma rooli (provider, deployer, distributor, importer)  
+- noudatetaan läpinäkyvyysvaatimuksia (esim. ilmoitus AI:n käytöstä)  
+- toteutetaan perusmuotoinen riskienhallinta  
+- varmistetaan datan laatu ja käyttöohjeiden noudattaminen  
+
+Nämä vaatimukset koskevat kaikkia yrityksiä, myös niitä, jotka eivät tavoittele ISO-sertifiointia.
+
+## 🔹 2. GDPR – vähimmäistaso, jos AI käsittelee henkilötietoja
+GDPR:n velvoitteet ovat aina voimassa, jos AI-järjestelmä käsittelee henkilötietoja.  
+Vähimmäistaso sisältää:
+
+- käsittelyperusteen määrittelyn  
+- tietosuojailmoitukset ja rekisteröityjen oikeudet  
+- tietojen minimoinnin  
+- tietoturvan riittävän tason  
+- sopimukset (DPA) toimittajien kanssa  
+
+GDPR menee aina edelle, jos se on ristiriidassa AI Actin kanssa.
+
+## 🔹 3. ISO 27001 – vähimmäistaso ilman sertifikaattia
+ISO 27001 -sertifikaattia ei vaadita, mutta sen perusperiaatteet ovat käytännössä välttämättömiä AI Actin täyttämiseksi.  
+Vähimmäistaso sisältää:
+
+- riskienhallinnan perusprosessi  
+- käyttöoikeuksien hallinta  
+- lokitus ja valvonta  
+- dokumentoidut toimintatavat  
+- tietoturvapolitiikan perusrakenne  
+
+Yrityksen ei tarvitse sertifioitua, mutta sen on silti toteutettava nämä käytännöt.
+
+## 🔹 4. Uudemmat AI-standardit (ISO/IEC 23894 ja ISO/IEC 42001)
+Näitä ei vaadita, mutta ne tukevat AI Actin vaatimuksia:
+
+- **ISO/IEC 23894** auttaa AI-riskienhallinnassa  
+- **ISO/IEC 42001** tarjoaa AI-hallintajärjestelmän rakenteen  
+
+Yrityksen ei tarvitse ottaa näitä käyttöön, mutta niiden periaatteet auttavat täyttämään AI Actin tekniset ja organisatoriset vaatimukset.
+
+---
+
+## 🔷 Mitä yrityksen on priorisoitava ensin?
+
+1. **EU AI Actin perusvelvoitteet**  
+   – roolin tunnistaminen  
+   – AI-järjestelmien inventaario  
+   – riskiluokitus  
+   – läpinäkyvyysvaatimukset  
+
+2. **GDPR, jos henkilötietoja käsitellään**  
+   – käsittelyperuste  
+   – tietosuojan toteutuminen  
+   – sopimukset ja dokumentaatio  
+
+3. **Tietoturvan perusmalli (ISO 27001 -periaatteet)**  
+   – käyttöoikeudet  
+   – lokitus  
+   – riskienhallinta  
+   – dokumentoidut prosessit  
+
+---
+
+## 🔷 Miksi tämä on tärkeää?
+
+Vaikka yritys ei tavoittelisi ISO-sertifikaattia, sen on silti:
+
+- varmistettava, että AI-järjestelmät ovat turvallisia  
+- täytettävä EU AI Actin vähimmäisvaatimukset  
+- noudatettava GDPR:ää henkilötietojen osalta  
+- koulutettava henkilöstö ymmärtämään riskit ja velvoitteet  
+
+Ilman näitä perusasioita yritys ei voi täyttää AI Actin vaatimuksia, vaikka sertifiointia ei tavoiteltaisi.
+
+
+
+
+
