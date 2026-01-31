@@ -66,14 +66,158 @@ Lisätietoa
 
 ## Riskiperusteinen luokittelu
 
+EU AI Act jakaa tekoälyjärjestelmät neljään riskiluokkaan. Riskiluokka määräytyy **käyttötarkoituksen**, ei teknologian tai ohjelmointikielen perusteella.
+
 EU AI Act jakaa tekoälyjärjestelmät neljään riskiluokkaan:
 
-| Riskitaso       | Esimerkki                                      | Velvoitteet                                           |
-|-----------------|------------------------------------------------|--------------------------------------------------------|
-| Kielletty       | Sosiaalinen pisteytys, manipuloiva AI          | Täysin kielletty                                       |
-| Korkea riski    | Rekrytointi, luottopäätökset, terveydenhuolto  | Tiukat vaatimukset: dokumentointi, riskienhallinta, data governance |
-| Rajoitettu riski| Chatbotit, generatiivinen AI                   | Läpinäkyvyysvaatimukset                                |
-| Vähäinen riski  | Pelit, suodattimet                             | Ei erityisiä velvoitteita                              |
+| Riskitaso | Esimerkkejä | Velvoitteet |
+|-----------|-------------|-------------|
+| **Kielletty** | Sosiaalinen pisteytys, manipuloiva AI, biometrinen profilointi | Täysin kielletty |
+| **Korkea riski** | Rekrytointi, luottopäätökset, terveydenhuolto, kriittinen infrastruktuuri, robotiikka tietyissä käyttötarkoituksissa | Tiukat vaatimukset: dokumentointi, riskienhallinta, data governance, CE-merkintä |
+| **Rajoitettu riski** | Chatbotit, generatiivinen AI, asiakaspalvelubotit, markkinointiautomaatiot | Läpinäkyvyysvaatimukset |
+| **Vähäinen riski** | Pelit, suodattimet, sisäiset työkalut, koodigenerointi | Ei erityisiä velvoitteita |
+
+![alt text](./images/eu-ai-act-riskslevels-example.png) 
+
+## 1. Kielletty AI – lisää esimerkkejä
+
+Kiellettyjä ovat järjestelmät, jotka aiheuttavat merkittävää haittaa perusoikeuksille.
+
+**Lisäesimerkkejä:**
+- tunteiden tunnistus työpaikalla tai koulussa  
+- reaaliaikainen kasvojentunnistus julkisissa tiloissa (poikkeuksia lukuun ottamatta)  
+- haavoittuvien ryhmien manipulointi (lapset, vanhukset)  
+- poliittinen manipulointi AI:n avulla  
+
+---
+
+## 2. Korkean riskin AI – laajennettu lista
+
+Korkean riskin AI on se, johon liittyy eniten velvoitteita. Tämä koskee erityisesti yrityksiä, jotka:
+
+- myyvät AI-tuotteita  
+- tarjoavat AI-palveluita  
+- rakentavat AI:ta kriittisiin prosesseihin  
+
+**Lisäesimerkkejä korkean riskin AI:sta:**
+
+### A) Työelämä ja HR
+- rekrytointipäätöksiä tekevät järjestelmät  
+- työntekijöiden arviointi  
+- automatisoidut soveltuvuustestit  
+
+### B) Rahoitus ja pankkiala
+- luottokelpoisuusarviointi  
+- lainapäätösten automatisointi  
+- petosten tunnistus, jos se vaikuttaa ihmisten oikeuksiin  
+
+### C) Terveydenhuolto
+- diagnostiikka  
+- hoitosuositukset  
+- lääkinnälliset laitteet, joissa on AI-komponentti  
+
+### D) Kriittinen infrastruktuuri
+- energia  
+- liikenne  
+- vesihuolto  
+- teollisuusautomaatio  
+
+### E) Robotiikka
+Robotiikka voi olla korkean riskin AI, jos se:
+
+- toimii teollisessa ympäristössä  
+- voi aiheuttaa fyysistä vahinkoa  
+- osallistuu kriittisiin prosesseihin  
+- toimii sairaaloissa, tehtaissa tai logistiikassa  
+
+**Esimerkkejä:**
+- autonomiset trukit  
+- kirurgiset robotit  
+- teollisuusrobotit, jotka tekevät päätöksiä itsenäisesti  
+
+---
+
+## 3. Rajoitetun riskin AI – laajennettu lista
+
+Tähän kuuluu suurin osa yritysten käyttämistä AI-järjestelmistä.
+
+**Lisäesimerkkejä:**
+- asiakaspalveluchatit  
+- markkinointiautomaatio  
+- generatiivinen AI (teksti, kuva, ääni)  
+- sisällönsuodatus  
+- analytiikka, joka ei tee päätöksiä ihmisten puolesta  
+- sisäiset työkalut, jotka eivät vaikuta oikeuksiin  
+
+Velvoitteet:  
+- käyttäjälle kerrottava, että AI on käytössä  
+- sisällön alkuperä ilmoitettava (esim. “tämä teksti on tuotettu AI:n avulla”)  
+
+---
+
+## 4. Vähäisen riskin AI – laajennettu lista
+
+Tähän kuuluu valtaosa ohjelmistoista, joita yritykset rakentavat.
+
+**Lisäesimerkkejä:**
+- pelien tekoäly  
+- suodattimet (esim. kameran efektit)  
+- koodigenerointi (Python, C#, JavaScript jne.)  
+- sisäiset automaatiot  
+- API-pohjaiset työkalut, jotka eivät tee päätöksiä ihmisten puolesta  
+- exe-ohjelmat, jotka eivät vaikuta oikeuksiin  
+
+---
+
+## 5. Miten riskiluokka määräytyy eri toimialoilla?
+
+Riskiluokka ei riipu:
+
+- ohjelmointikielestä  
+- siitä, onko kyseessä exe, web-app, API tai mobiilisovellus  
+- siitä, myydäänkö lisenssiä vai palvelua  
+
+Riskiluokka riippuu **vain käyttötarkoituksesta**.
+
+### Esimerkkejä toimialoittain:
+
+| Toimiala | Esimerkki | Riskiluokka |
+|----------|-----------|-------------|
+| Teollisuus | autonominen robotti, joka voi aiheuttaa vahinkoa | Korkea |
+| Teollisuus | tuotannon optimointialgoritmi | Rajoitettu / vähäinen |
+| Sairaalat | diagnostiikka, hoitosuositukset | Korkea |
+| Sairaalat | ajanvaraus-chatbot | Rajoitettu |
+| Fitness | treeniohjelman suositus | Rajoitettu |
+| Fitness | terveydentilan arviointi | Korkea |
+| Konsultointi | sisäinen analytiikkatyökalu | Vähäinen |
+| Ohjelmistokehitys | koodigenerointi | Vähäinen |
+| Markkinointi | generatiivinen sisällöntuotanto | Rajoitettu |
+| Pankki | luottopäätökset | Korkea |
+| Valtio | sosiaalietuuksien päätöksenteko | Korkea |
+| Valtio | asiakaspalvelubotti | Rajoitettu |
+
+---
+
+## 6. Robotiikka – erityishuomio
+
+Robotiikka kuuluu EU AI Actissa erityistarkasteluun, koska siihen liittyy:
+
+- fyysinen riski  
+- turvallisuusvaatimukset  
+- mahdollisuus aiheuttaa vahinkoa  
+
+Robotti voi olla:
+
+- **korkean riskin AI**, jos se tekee itsenäisiä päätöksiä  
+- **vähäisen riskin AI**, jos se toimii täysin manuaalisesti ilman AI-komponenttia  
+
+## 7. Yhteenveto koskien riskien tasosta
+
+- Riskiluokka määräytyy **käyttötarkoituksen**, ei teknologian perusteella.  
+- Sama teknologia voi olla matalan riskin tai korkean riskin AI riippuen siitä, missä sitä käytetään.  
+- Toimialat kuten terveydenhuolto, pankit, teollisuus ja julkinen sektori ovat lähes aina korkean riskin alueita.  
+- Generatiivinen AI on yleensä rajoitetun riskin AI, ellei sitä käytetä päätöksentekoon.  
+- Robotiikka voi olla korkean riskin AI, jos se voi aiheuttaa fyysistä vahinkoa.  
 
 ---
 
