@@ -22,6 +22,32 @@ Keskeyttämiseen kuuluu:
 Keskeyttäminen ei aiheuta EU AI Actin mukaisia seuraamuksia, kunhan järjestelmää ei oteta käyttöön.
 
 ---
+## 1.1 Tekoälyn rakentamisen tekniset vaatimukset (muisti, tallennus, laskenta)
+
+AI-projektin keskeyttämisen yleinen syy liittyy teknisiin vaatimuksiin, erityisesti muistin, tallennustilan ja laskentatehon tarpeeseen. Tekoälymallien rakentaminen voi vaatia huomattavia resursseja, ja vaatimukset kasvavat mallin koon ja käyttötarkoituksen mukaan.
+
+### Pienet mallit (agentit, assistentit, Copilot Studio -ratkaisut)
+- Muisti: gigatavuluokka  
+- Tallennus: gigatavuista kymmeniin gigatavuihin  
+- Laskenta: normaali pilvi-infra riittää  
+- Ei tarvetta GPU-klustereille  
+
+### Keskikokoiset mallit (domain-spesifiset mallit)
+- Muisti: kymmeniä–satoja gigatavuja  
+- Tallennus: satoja gigatavuja – muutama teratavu  
+- Laskenta: GPU-palvelimet  
+- Tarve datan puhdistukselle ja valvonnalle  
+
+### Suuret kielimallit ja multimodaaliset mallit
+- Muisti: kymmenistä teratavuista satoihin teratavuihin  
+- Tallennus: 100 TB – petatavuluokka  
+- Laskenta: GPU-klusterit (A100, H100, MI300 jne.)  
+- Kustannus: erittäin korkea, usein miljoonaluokkaa  
+
+Nämä vaatimukset voivat johtaa siihen, että projekti keskeytetään tai siirretään myöhemmäksi, jos resurssit, budjetti tai teknologia eivät ole riittäviä. Keskeyttäminen ei aiheuta EU AI Actin mukaisia seuraamuksia, kunhan keskeneräistä järjestelmää ei oteta käyttöön.
+
+
+---
 
 ## 2. Keskeyttämisen elinkaari (1–12 kuukautta)
 
