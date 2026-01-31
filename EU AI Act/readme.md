@@ -250,6 +250,11 @@ Jos käyttö perustuu valmiiseen malliin (esim. GPT-4, Claude, Llama), toimitaan
 
 ---
 
+## Oman tekoälyn rakentaminen vai valmiiden palvelujen käyttö?
+
+EU AI Actin aikakaudella yrityksen on arvioitava, kannattaako rakentaa oma tekoälymalli vai hyödyntää valmiita palveluja (kuten Copilot, GPT, Claude tai Gemini). Oman mallin rakentaminen on teknisesti raskasta, kallista ja vaatii suuria datamääriä sekä merkittävää osaamista. Valmiiden palvelujen käyttö on useimmille yrityksille realistisempi ja kustannustehokkaampi ratkaisu, ja niiden päälle voidaan rakentaa agentteja, automaatioita ja yrityskohtaisia toimintoja ilman suuria investointeja. Valtaosa yrityksistä hyödyntää valmiita malleja ja keskittyy niiden turvalliseen käyttöön, dokumentointiin ja EU AI Actin mukaiseen valvontaan.
+
+
 ## Yhteenveto
 
 EU AI Act ei koske vain mallien kehittäjiä. Asetus koskee kaikkia, jotka:
