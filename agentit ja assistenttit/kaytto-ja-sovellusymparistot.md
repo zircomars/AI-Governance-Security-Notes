@@ -264,17 +264,18 @@ Tässä osiossa kuvataan keskeiset riskit, jotka liittyvät automaation, tekoäl
 
 ---
 
-| Kerros              | Riskityypit                                                                 |
-|---------------------|------------------------------------------------------------------------------|
-| 1. FYYSINEN KERROS (IoT, robotit) | Sensorivirheet, mekaaniset viat, sähkökatkot, törmäykset                    |
-| 2. VERKKO- JA INFRAKERROS | Nettiyhteyden katkot, latenssi, DNS-virheet, pilvihäiriöt, muistin loppuminen |
-| 3. AUTOMAATIOKERROS (RPA, CI/CD) | Väärä prosessi, jumiutuminen, ajoitusvirheet, ei fallback-tilaa             |
-| 4. TEKOÄLYKERROS (LLM) | Hallusinaatiot, väärinymmärrykset, kontekstivirheet, mallipäivitykset       |
-| 5. AGENTTIKERROS (autonomiset toiminnot) | Väärä toimintaketju, liiallinen autonomia, loopit, puutteellinen valvonta   |
-| 6. ASSISTENTTIKERROS (käyttöliittymä) | Väärin tulkittu komento, väärä työkalun käyttö, konfiguraatiovirheet        |
-| 7. ORGANISAATIOKERROS | Puutteelliset politiikat, roolien epäselvyys, shadow AI, koulutuksen puute  |
+## 🔷 Kerroksellinen riskitaulukko – taso, todennäköisyys, vaikutus ja riskityypit
 
----
+| Kerros | Riskitaso | Todennäköisyys | Vaikutus | Riskityypit |
+|--------|-----------|----------------|----------|-------------|
+| **1. Fyysinen kerros** (IoT, robotit, autot) | 🔴 Korkea | 🟠 Keskitaso | 🔴 Korkea | Sensorivirheet, mekaaniset viat, ylikuumeneminen, sähkökatkot, turvallisuusviat, törmäykset |
+| **2. Verkko- ja infrakerros** | 🟠 Keskitaso | 🔴 Korkea | 🟠 Keskitaso | Nettiyhteyden katkot, DNS-virheet, palvelinhäiriöt, yhteyksien epäonnistuminen, muistin loppuminen, varavoiman puute |
+| **3. Automaatio- ja prosessikerros** (RPA, CI/CD) | 🟠 Keskitaso | 🟠 Keskitaso | 🔴 Korkea | Väärä prosessi, jumiutuminen, ajoitusvirheet, konfiguraatiovirheet, ei fallback-tilaa, virheellinen integraatio |
+| **4. Tekoälykerros** (LLM, päätöksenteko) | 🟠 Keskitaso | 🔴 Korkea | 🟠 Keskitaso | Hallusinaatiot, väärinymmärrykset, puutteellinen data, epäselvät rajaukset, mallipäivitysten muutokset |
+| **5. Agenttikerros** (autonomiset toiminnot) | 🔴 Korkea | 🟠 Keskitaso | 🔴 Korkea | Väärä toimintaketju, liiallinen autonomia, loopit, tilanhallinnan menetys, heikot rajat, puutteellinen valvonta |
+| **6. Assistenttikerros** (käyttöliittymä, työkalut) | 🟢 Matala | 🟠 Keskitaso | 🟠 Keskitaso | Väärin tulkittu komento, väärä työkalun käyttö, käyttäjän virheet, konfiguraatiovirheet |
+| **7. Organisaatiokerros** (politiikat, roolit, valvonta) | 🔴 Korkea | 🔴 Korkea | 🔴 Korkea | Puutteelliset politiikat, liian laajat oikeudet, shadow AI -riskit, valvonnan puute, dokumentoinnin puute |
+
 
 ---
 
