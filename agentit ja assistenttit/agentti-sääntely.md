@@ -421,44 +421,44 @@ Tämä tiedosto kuvaa keskeiset lakivaatimukset, jotka koskevat agentti- ja assi
 │        YDINKERROS             │
 │  Agentti • Assistentti        │
 └──────────────┬────────────────┘
-↓
+               ↓
 ┌───────────────────────────────┐
 │          DATAKERROS           │
 │  Keruu • Tallennus • Käyttö   │
 │  Suojaus • Elinkaari          │
 └──────────────┬────────────────┘
-↓
+               ↓
 ┌───────────────────────────────┐
 │     DIGI & JÄRJESTELMÄT       │
 │  Työkalut • API • Integraatiot│
 └──────────────┬────────────────┘
-↓
+               ↓
 ┌───────────────────────────────┐
 │   HYÖKKÄYS–PUOLUSTUS (M/V)    │
 │  Musta: hyökkäykset           │
 │  Valkoinen: puolustus         │
 └──────────────┬────────────────┘
-↓
+               ↓
 ┌───────────────────────────────┐
 │          RISKIKARTTA          │
 │  Tekniset • Kyber • Laki      │
 └──────────────┬────────────────┘
-↓
+               ↓
 ┌───────────────────────────────────┐
 │     KÄYTTÖÖNOTTOPOLKU             │
 │  Suunnittelu → Testaus → Valvonta │
 └──────────────┬────────────────────┘
-↓
+               ↓
 ┌───────────────────────────────┐
 │          LAKIKERROS           │
 │  GDPR • EU AI Act • Datalaki  │
 └──────────────┬────────────────┘
-↓
+               ↓
 ┌───────────────────────────────┐
 │       MUUT NÄKÖKULMAT         │
 │  Eettisyys • Selitettävyys    │
 └──────────────┬────────────────┘
-↓
+               ↓
 ┌───────────────────────────────┐
 │         KOKONAISKUVA          │
 │  Agentti + Data + Laki + Kyber│
