@@ -294,6 +294,189 @@ Tämä kuvaa agentti–assistentti–ihminen -riskivirran ja haavoittuvuuspistee
 - Lokitus ja valvonta
 - EU AI Act -vaatimusten noudattaminen
 
+---
+
+# 🔷 Riskimatriisi (Todennäköisyys × Vaikutus)
+
+Tämä matriisi kuvaa agentti- ja assistenttijärjestelmien riskit suhteessa niiden todennäköisyyteen ja vaikutukseen.
+
+| Riski | Todennäköisyys | Vaikutus | Riskitaso |
+|-------|-----------------|----------|-----------|
+| Prompt injection | Korkea | Korkea | 🔴 Kriittinen |
+| Työkalujen väärinkäyttö | Keskitaso | Korkea | 🔴 Kriittinen |
+| Hallusinaatiot | Korkea | Keskitaso | 🟠 Merkittävä |
+| Tietovuoto | Keskitaso | Korkea | 🔴 Kriittinen |
+| Autonominen virhe | Matala–keskitaso | Korkea | 🔴 Kriittinen |
+| Auditoinnin puute | Keskitaso | Keskitaso | 🟠 Merkittävä |
+| Valvonnan puute | Matala | Korkea | 🔴 Kriittinen |
+| Sisäinen väärinkäyttö | Matala–keskitaso | Korkea | 🔴 Kriittinen |
+| Kontekstin väärinkäyttö | Keskitaso | Matala | 🟡 Kohtalainen |
+| Pilvipalveluriippuvuus | Korkea | Matala–keskitaso | 🟠 Merkittävä |
+| Lainsäädännön rikkominen | Matala | Korkea | 🔴 Kriittinen |
+
+
+# 🔷 Governance‑malli agentti- ja assistenttijärjestelmille
+
+Tämä taulukko kuvaa hallintamallin, joka varmistaa turvallisen ja valvotun toiminnan.
+
+| Osa-alue | Kuvaus | Vastuutaho |
+|----------|--------|------------|
+| Roolien määrittely | Agentin, assistentin ja ihmisen roolit määritellään | Organisaation johto |
+| Päätösmallit | Assistentti → Agentti → Ihminen -malli käytössä | Arkkitehtuuri / turvallisuus |
+| Valvonta | Kaikki toiminnot valvotaan ja lokitetaan | Turvatiimi |
+| Hyväksyntä | Ihminen hyväksyy kriittiset toiminnot | Prosessinomistaja |
+| Rajaukset | Agentille annetaan vain minimi-oikeudet | DevOps / infra |
+| Testaus | Sandbox- ja edge case -testaus ennen tuotantoa | QA / turvallisuus |
+| Auditointi | Toiminta auditoidaan säännöllisesti | Sisäinen tarkastus |
+| Riskienhallinta | Riskit arvioidaan ja päivitetään jatkuvasti | Riskienhallinta |
+| Sääntelyn noudattaminen | GDPR, EU AI Act, datalait | Lakitiimi |
+| Päivitykset | Mallit ja rajaukset päivitetään muutosten mukaan | Arkkitehtuuri |
+
+
+# 🔷 Lakikerros – Agentit & Assistentit (GDPR + EU AI Act + muut lait)
+
+Tämä tiedosto kuvaa keskeiset lakivaatimukset, jotka koskevat agentti- ja assistenttijärjestelmiä.
+
+---
+
+## 1. GDPR (Tietosuoja)
+- henkilötiedon käsittely rajattava minimiin  
+- käyttötarkoitus määriteltävä  
+- datan elinkaari hallittava  
+- oikeus tulla unohdetuksi  
+- tietoturvaloukkauksista ilmoitettava  
+- rekisteröidyn oikeudet turvattava  
+
+---
+
+## 2. EU AI Act (Tekoälyasetus)
+### Riskiperusteinen malli
+- korkean riskin järjestelmät  
+- kielletut järjestelmät  
+- läpinäkyvyysvaatimukset  
+- selitettävyys  
+- ihmisen valvonta  
+- auditointi  
+- turvallisuusvaatimukset  
+
+### Agentteihin kohdistuvat vaatimukset
+- autonominen toiminta valvottava  
+- päätöksenteko selitettävä  
+- riskit arvioitava  
+- fallback-mallit pakollisia  
+
+### Assistentteihin kohdistuvat vaatimukset
+- ei saa tehdä päätöksiä itsenäisesti  
+- viestinvälitys oltava läpinäkyvää  
+- käyttäjän on tiedettävä, että kyseessä on tekoäly  
+
+---
+
+## 3. Digipalvelulaki
+- palveluiden saavutettavuus  
+- läpinäkyvyys  
+- käyttäjän oikeudet  
+
+---
+
+## 4. Kyberturvallisuuslaki
+- järjestelmien suojaus  
+- lokitus  
+- valvonta  
+- varautuminen  
+
+---
+
+## 5. Datalaki
+- datan jakaminen  
+- datan käyttöoikeudet  
+- datan hallinta  
+
+---
+
+## 6. Sopimusoikeus
+- vastuut  
+- velvoitteet  
+- riskien jakaminen  
+
+---
+
+## 7. Immateriaalioikeudet
+- datan omistajuus  
+- tuotosten omistajuus  
+- lisenssit  
+
+---
+
+## 8. Kansainväliset sopimukset
+- rajat ylittävä datansiirto  
+- pilvipalveluiden käyttö  
+
+
+# 🔷 Agentti & Assistentti – Master‑kaavio (Kokonaisuus)
+
+
+```
+┌───────────────────────────────┐
+│        YDINKERROS             │
+│  Agentti • Assistentti        │
+└──────────────┬────────────────┘
+↓
+┌───────────────────────────────┐
+│          DATAKERROS           │
+│  Keruu • Tallennus • Käyttö   │
+│  Suojaus • Elinkaari          │
+└──────────────┬────────────────┘
+↓
+┌───────────────────────────────┐
+│     DIGI & JÄRJESTELMÄT       │
+│  Työkalut • API • Integraatiot│
+└──────────────┬────────────────┘
+↓
+┌───────────────────────────────┐
+│   HYÖKKÄYS–PUOLUSTUS (M/V)    │
+│  Musta: hyökkäykset           │
+│  Valkoinen: puolustus         │
+└──────────────┬────────────────┘
+↓
+┌───────────────────────────────┐
+│          RISKIKARTTA          │
+│  Tekniset • Kyber • Laki      │
+└──────────────┬────────────────┘
+↓
+┌───────────────────────────────────┐
+│     KÄYTTÖÖNOTTOPOLKU             │
+│  Suunnittelu → Testaus → Valvonta │
+└──────────────┬────────────────────┘
+↓
+┌───────────────────────────────┐
+│          LAKIKERROS           │
+│  GDPR • EU AI Act • Datalaki  │
+└──────────────┬────────────────┘
+↓
+┌───────────────────────────────┐
+│       MUUT NÄKÖKULMAT         │
+│  Eettisyys • Selitettävyys    │
+└──────────────┬────────────────┘
+↓
+┌───────────────────────────────┐
+│         KOKONAISKUVA          │
+│  Agentti + Data + Laki + Kyber│
+└───────────────────────────────┘
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
