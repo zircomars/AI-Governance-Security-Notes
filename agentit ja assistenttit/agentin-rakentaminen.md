@@ -2,6 +2,13 @@
 
 Agentin rakentaminen ei ole enää “iso talo, iso tiimi” -projekti. Pienet tiimit pystyvät nykyään rakentamaan kokonaisia agentti-ekosysteemejä, mutta samalla syntyy uusi ilmiö: agentin rakentaminen muistuttaa toisen ihmisen ajattelutavan mallintamista.
 
+> ⚠️ **Varoitus: agentin ja assistentin rakentaminen vaatii selkeän rakenteen ja valvotun prosessin**  
+> Agentin rakentaminen muistuttaa ihmisen ajattelutavan mallintamista. Ilman selkeää rakennetta syntyy väistämättä virheitä. Assistentti ei tee päätöksiä itse, vaan kysyy agentilta vahvistuksen. Jos agentti antaa vihreän valon, assistentti toistaa sen eteenpäin. Vastaavasti agentti tarvitsee ihmisen läsnäolon, kun kohtaa epäselvän tai prosessisen tilanteen. Vihreä valo annetaan vasta, kun ihminen on vahvistanut päätöksen. Tämä prosessi on välttämätön, jotta järjestelmä toimii luotettavasti ja turvallisesti. <br>
+> - ℹ️ **Huomautus: sisältö on kirjoitettu tammikuussa 2026**  
+> Tässä dokumentissa kuvattu rakenne, päätösmallit ja agenttien toimintalogiikka perustuvat tilanteeseen tammikuussa 2026. Teknologiat, sääntely, käytännöt ja riskienhallintamallit voivat muuttua ajan myötä. Siksi sisältöä tulee päivittää ja tarkentaa myöhemmin, erityisesti jos agenttien ja assistenttien käyttö laajenee tai sääntelyympäristö muuttuu.
+
+
+
 ---
 
 ## 1. Miksi agentin rakentaminen muistuttaa ajattelun mallintamista?
