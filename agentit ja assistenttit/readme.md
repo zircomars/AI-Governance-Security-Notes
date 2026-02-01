@@ -95,3 +95,4 @@ Niiden erottaminen omaksi kokonaisuudekseen on välttämätöntä, jotta EU AI A
 # Linkit ja lisätietoa:
 - https://digitalworkforce.com/fi/rpa-blogi/mika-tekoalyagentti/ (tässä on kolme osaa ja lisätietoa)
 - https://ai-opas.fi/mita-ovat-tekoalyagentit/
+- https://www.loihde.com/ajankohtaista/blogi/mit-eroa-on-ohjelmistoautomaatiolla-tekoalyagentilla-ja-ai-assistentilla
