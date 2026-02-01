@@ -313,7 +313,44 @@ Tässä osiossa kuvataan, miten riskit muodostuvat eri teknologisissa ja organis
 - Nämä infrastruktuuririskit voivat vaikuttaa kaikkiin kerroksiin samanaikaisesti  
 - Ne voivat laukaista tai pahentaa muita riskejä eri tasoilla  
 
+---
 
+# 📊 Riskimatriisi (todennäköisyys × vaikutus)
+
+![alt text](./images/riskimatrisi.png)
+
+---
+
+## 🔷 Mitä tämä malli kertoo?
+
+Tässä osiossa kuvataan, mitkä kerrokset muodostavat suurimman riskin, kun tarkastellaan riskitasoa, todennäköisyyttä ja vaikutusta samanaikaisesti.
+
+### Korkean riskin kerrokset
+
+- Fyysinen kerros  
+- Agenttikerros  
+- Organisaatiokerros  
+
+### Korkean todennäköisyyden riskit
+
+- Verkkoinfra  
+- Tekoälykerros  
+- Organisaatiokerros  
+
+### Korkean vaikutuksen riskit
+
+- Fyysiset laitteet  
+- Agentit  
+- Automaatio  
+- Organisaatiot  
+
+---
+
+### 🔍 Yhteenveto
+
+Fyysiset laitteet + autonomia + heikko governance = suurin mahdollinen riski.
+
+Tämä tarkoittaa, että kun fyysiset järjestelmät (kuten IoT-laitteet tai robotit) yhdistetään autonomisiin toimintoihin (agentit) ilman selkeää valvontaa, politiikkaa ja dokumentaatiota (organisaatiokerros), syntyy järjestelmän kannalta kriittisin riskikokonaisuus.
 
 
 
