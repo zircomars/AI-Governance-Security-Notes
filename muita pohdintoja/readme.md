@@ -26,6 +26,8 @@ Tämä osio kuvaa, miten AI-agentit, EU AI Act, Shadow AI ja organisaatioiden ar
 - Organisaatiot rakentavat agenttiputkia, joissa yksi agentti valvoo toista.  
 - Konsultit ja integraatiopalvelut alkavat myydä agenttipohjaisia palvelupaketteja, mikä lisää rajapintakriisejä.
 
+> Agenttien ja assistenttien toiminnasta ei voida aina ennustaa, mitä ne tekevät, ellei niiden toimintaa valvota aktiivisesti. Siksi jokaisen agentin taustalla täytyy olla koulutettu ja ohjeistettu fyysinen ihminen, joka seuraa agentin toimintaa ja puuttuu siihen tarvittaessa. Jos agentti kohtaa poikkeavia tilanteita, esteitä tai odottamattomia yllätyksiä, automaattinen toiminta ei saa jatkua ilman valvontaa. Ihmisen tehtävänä on pysäyttää prosessi, arvioida tilanne ja jatkaa siitä eteenpäin turvallisesti ja hallitusti.
+
 ### Agenttien autonomia kasvaa
 
 - Oikeudet laajenevat: lukeminen → kirjoittaminen → muutosten tekeminen → automaattiset päätökset.  
