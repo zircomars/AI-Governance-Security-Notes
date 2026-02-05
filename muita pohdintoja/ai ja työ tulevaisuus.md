@@ -33,6 +33,33 @@
 - Uutta opitaan ja sovelletaan pienissä paloissa.  
 - Työnantajat arvostavat oppimiskykyä ja soveltamista.
 
+### 🔶 Mahdollinen huono puoli tekoälyn käytössä
+
+Yksi merkittävä huono puoli tekoälyn käytössä liittyy automaattiseen suodatukseen ja päätöksentekoon. Esimerkiksi rekrytoinnissa tekoäly voi suodattaa satojen hakijoiden listasta vain ne, jotka täyttävät tietyt avainsanat tai työkuvauksen ehdot. Vaikka tämä tehostaa prosessia, lopputulos ei välttämättä vastaa esihenkilön tai rekrytoijan todellisia toiveita. Suodatus voi painottaa liikaa työkokemusta, ikää, koulutusta tai motivaatiokirjeen rakennetta, jolloin potentiaalisia hakijoita jää helposti huomaamatta.
+
+Tekoälyn käyttö voi myös johtaa tilanteeseen, jossa järjestelmä tekee valintoja liian mekaanisesti. Ihmisen potentiaali, oppimiskyky ja motivaatio eivät aina näy datassa, ja siksi automaattinen suodatus voi olla epäreilu tai vinoutunut. Lisäksi työntekijöitä ohjeistetaan olemaan syöttämättä arkaluonteisia tietoja tekoälypalveluihin, mikä korostaa tietoturvan ja Shadow AI ‑riskien ymmärtämisen tärkeyttä.
+
+Tekoäly ei myöskään korvaa teknistä osaamista. Automaatio — kuten skriptien rakentaminen, PowerShell‑komennot tai järjestelmien konfigurointi — edellyttää edelleen ihmisen tekemää suunnittelua. Tekoäly voi kysyä tarvittavat tiedot, tarkistaa puuttuvat kohdat ja tehdä yhteenvedon, mutta varsinainen toiminto, kuten uuden käyttäjän luonti Entra ID:hen, tapahtuu aina taustalla olevan skriptin tai automaation kautta.
+
+
+### 🔶 Muita tekoälyn huonoja puolia ja riskejä
+
+- Tekoäly voi vahvistaa vinoumia, jos se oppii datasta, joka on jo valmiiksi epätasa-arvoista tai yksipuolista. Tämä voi johtaa epäreiluihin suosituksiin tai suodatuksiin esimerkiksi iän, koulutuksen tai taustan perusteella.
+
+- Liiallinen luottamus automaatioon voi passivoida käyttäjän. Kun tekoäly tekee suodatuksia tai ehdotuksia, ihminen ei välttämättä enää tarkista tuloksia kriittisesti, jolloin virheitä jää huomaamatta.
+
+- Tietoturvariskit kasvavat, jos tekoälypalveluihin syötetään vahingossa arkaluonteisia tietoja. Tämä koskee erityisesti tilanteita, joissa käytetään henkilökohtaisia tilejä tai valvomattomia Shadow AI -työkaluja.
+
+- Tekoäly ei ymmärrä kontekstia, motivaatiota tai ihmisen potentiaalia. Se näkee vain sanat ja rakenteet, ei taustaa tai tarkoitusta. Poikkeukselliset hakijat voivat jäädä kokonaan huomaamatta.
+
+- Tekoäly voi tehdä virheellisiä tulkintoja ja antaa suosituksia, jotka eivät vastaa todellista tarvetta. Tämä korostuu tilanteissa, joissa data on puutteellista tai epäselvää.
+
+- Automaatio voi toimia väärin, jos sitä ei valvota. Tekoäly voi ohjata prosessia, mutta ei ymmärrä seurauksia. Virheelliset parametrit voivat levitä nopeasti, jos taustalla oleva skripti toimii ilman tarkistusta.
+
+- Shadow AI lisää riskejä, kun työntekijät käyttävät omia tekoälytyökalujaan ilman organisaation lupaa. Tämä voi johtaa datan vuotamiseen, väärään päätöksentekoon ja valvomattomiin prosesseihin.
+
+- Tekoälyn päätökset voivat olla läpinäkymättömiä. Järjestelmä ei aina pysty selittämään, miksi se valitsi jonkun tai hylkäsi jonkun, mikä vaikeuttaa virheiden korjaamista ja päätösten perustelua.
+
 ---
 
 ## 🔶 2. Miten työnhakija voi kehittyä ilman että AI vie kaiken huomion?
