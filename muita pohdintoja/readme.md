@@ -33,6 +33,30 @@ Tämä osio kuvaa, miten AI-agentit, EU AI Act, Shadow AI ja organisaatioiden ar
 - Oikeudet laajenevat: lukeminen → kirjoittaminen → muutosten tekeminen → automaattiset päätökset.  
 - Agentit alkavat tehdä hallinnollisia päätöksiä, joita ei vielä osata täysin valvoa.
 
+### 🔶 Agentti vs. ihminen työssä: keskeiset erot
+
+- Agentti suorittaa sääntöpohjaisia ja toistuvia tehtäviä, mutta ihminen tekee harkintaa, tulkintaa ja päätöksiä, joita ei voi automatisoida.
+
+- Agentti toimii vain rajapintojen, skriptien ja käyttöoikeuksien puitteissa, kun taas ihminen pystyy toimimaan myös tilanteissa, joissa ohjeet ovat puutteellisia tai epäselviä.
+
+- Agentti ei ymmärrä motivaatiota, tunnetiloja, vuorovaikutusta tai tiimidynamiikkaa. Ihminen pystyy arvioimaan nämä ja tekemään päätöksiä, jotka perustuvat kokonaiskuvaan.
+
+- Agentti ei kanna vastuuta. Kaikki agentin tekemät toimet ovat aina ihmisen vastuulla, erityisesti EU AI Actin mukaan.
+
+- Agentti ei kykene eettiseen arviointiin. Ihminen pystyy huomioimaan oikeudenmukaisuuden, syrjimättömyyden ja tilanteen erityispiirteet.
+
+- Agentti ei opi itsenäisesti ilman dataa ja ohjausta. Ihminen pystyy oppimaan kokemuksesta, virheistä ja intuitiosta.
+
+- Agentti ei voi käsitellä luottamuksellisia tai arkaluonteisia tilanteita, kuten konfliktien ratkaisua, palautekeskusteluja tai kriisitilanteita. Nämä ovat aina ihmisen tehtäviä.
+
+- Agentti ei ymmärrä kontekstia tai poikkeuksia. Ihminen pystyy tunnistamaan tilanteet, joissa sääntöjä täytyy soveltaa joustavasti tai joissa automaatio täytyy pysäyttää.
+
+- Agentti voi tukea rekrytointia teknisesti (suodatus, aikataulutus, dokumentointi), mutta ei voi valita työntekijää tai arvioida potentiaalia. Ihminen tekee lopullisen arvion.
+
+- Agentti voi suorittaa automaatiota, mutta ei voi rakentaa sitä. Automaatio syntyy aina ihmisen suunnittelemasta logiikasta, skripteistä ja päätöksistä.
+
+- Agentti ei kykene kantamaan vastuuta virheistä tai oikeudellisista seurauksista. Ihminen vastaa aina agentin toiminnasta, myös silloin kun agentti toimii virheellisesti.
+
 ---
 
 ## 🔶 2. EU AI Act: vaikutukset vuosina 2026–2027
