@@ -10,6 +10,10 @@ Same In English but shortly:
 - This repo will focus on **Shadow AI** — the phenomenon where vulnerabilities in an AI system spread across its connected network, and what that actually means in practice.
 - **AI Pentesting** refers to ethical hacking where both offensive and defensive teams test how to protect a company’s digital assets — such as websites, servers, and other applications — from potential threats.
 - **The EU AI Act** is the European Union’s artificial intelligence regulation that came into force in spring 2025. This legislation outlines what the act entails and who it applies to.
+- **AI agents and assistants** essentially function as forms of automation. An agent can carry out tasks based on instructions and code provided by a human, while still operating under human oversight. An assistant follows the same idea, but if it encounters a problem, it escalates the issue to the agent — and the agent decides how to proceed and completes the process.
+  - In the end, the whole system is still built on AI-driven logic — essentially a structured if–else decision flow — but with the requirement that a human remains in official supervisory control.
+- This repo also includes a brief overview and recap of the **ISO/IEC 27000 series**, explaining what it is, why it matters, and the criteria it sets. These standards define the foundations of information security management — and they directly relate to topics like Shadow AI, AI pentesting, AI system behavior, and the broader digitalization landscape.
+  - In practice, ISO 27000 helps organizations understand how to manage risks, secure AI infrastructures, and ensure that both traditional systems and AI-driven architectures follow consistent, auditable security principles.
 
 ![alt text](/images/AI-law-concept-img.jpg) 
 
