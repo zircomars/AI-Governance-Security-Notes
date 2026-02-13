@@ -6,6 +6,8 @@ A repository focused on AI safety, general AI usage practices, and security cons
 - **AI Pentest** eli penetraatiotesti tarkoittaa eettistä hakkerointia, jossa sekä hyökkäävä että suojeleva tiimi testaa, miten suojata yrityksen palveluita, kuten verkkosivustoja, palvelimia ja muita sovelluksia.  
 - **EU AI Act** tarkoittaa Euroopan tekoälylain säädöstä/asetusta, joka tuli voimaan vuonna keväällä 2025. Tämä asetus kertoo, mitä se tarkoittaa ja ketä se koskee.
 
+> Tämä repo on kirjoitettu tammikuussa 2026. Osa sisällöstä on laadittu tuona kuukautena, ja osa taas on koottu, pohdittu, testattu ja tutkittu syksyllä 2025. Tieto voi luonnollisesti muuttua ja päivittyä ajan myötä
+
 Same In English but shortly:
 - This repo will focus on **Shadow AI** — the phenomenon where vulnerabilities in an AI system spread across its connected network, and what that actually means in practice.
 - **AI Pentesting** refers to ethical hacking where both offensive and defensive teams test how to protect a company’s digital assets — such as websites, servers, and other applications — from potential threats.
@@ -14,6 +16,8 @@ Same In English but shortly:
   - In the end, the whole system is still built on AI-driven logic — essentially a structured if–else decision flow — but with the requirement that a human remains in official supervisory control.
 - This repo also includes a brief overview and recap of the **ISO/IEC 27000 series**, explaining what it is, why it matters, and the criteria it sets. These standards define the foundations of information security management — and they directly relate to topics like Shadow AI, AI pentesting, AI system behavior, and the broader digitalization landscape.
   - In practice, ISO 27000 helps organizations understand how to manage risks, secure AI infrastructures, and ensure that both traditional systems and AI-driven architectures follow consistent, auditable security principles.
+ 
+> This repo was written in January 2026. Some parts were created during that month, while others were researched, tested, and drafted in autumn 2025. Naturally, the information may evolve and be updated over time.
 
 ![alt text](/images/AI-law-concept-img.jpg) 
 
