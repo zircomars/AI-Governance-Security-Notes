@@ -6,6 +6,10 @@ A repository focused on AI safety, general AI usage practices, and security cons
 - **AI Pentest** eli penetraatiotesti tarkoittaa eettistä hakkerointia, jossa sekä hyökkäävä että suojeleva tiimi testaa, miten suojata yrityksen palveluita, kuten verkkosivustoja, palvelimia ja muita sovelluksia.  
 - **EU AI Act** tarkoittaa Euroopan tekoälylain säädöstä/asetusta, joka tuli voimaan vuonna keväällä 2025. Tämä asetus kertoo, mitä se tarkoittaa ja ketä se koskee.
 
+Same In English but shortly:
+- This repo will focus on **Shadow AI** — the phenomenon where vulnerabilities in an AI system spread across its connected network, and what that actually means in practice.
+- **AI Pentesting** refers to ethical hacking where both offensive and defensive teams test how to protect a company’s digital assets — such as websites, servers, and other applications — from potential threats.
+- **The EU AI Act** is the European Union’s artificial intelligence regulation that came into force in spring 2025. This legislation outlines what the act entails and who it applies to.
 
 ![alt text](/images/AI-law-concept-img.jpg) 
 
