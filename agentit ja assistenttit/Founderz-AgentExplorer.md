@@ -13,11 +13,14 @@ deklaraativinen agentti
 - no additional license cost
 - designed to reduce interruptions, offload repetitive tasks and free up time for deeper, creative work
 
-![Alt text](image/Founderz-agent0.png)
-
-
+> ilmoittautumisen etusivu: https://founderz.com/skilling/agent-a-thon-fz/sign-up/
+![Alt text](./images/Founderz-agent0.png)
 
 ## mikä agentti
+
+> Kurssin sisältö ja sisällä, esim. suoritettu 100%
+![Alt text](./images/Founderz-agent1.png)
+
 
 agenti versus perinteinen chatti
 
@@ -89,6 +92,10 @@ Licensing guideline:
 > Copilot studio lite noudattaa samoja tietotuirva- ja compliance sääntöjä kuin muu M365
 > (huom tämä on vain yritys tilille että pitää olla tenant olemassa , sekä ei pysty henkilökohtaisena outlook/hotmail.com tarjota) paitsi ellei kulje muun kautta avatessaan tenant.
 > eli henkilökohtaisessa tilissä ei pysty, ja vaikka oiskin azure tenant niin siinä vaattii sen minimiaalsen lisenssin käyttön
+
+
+> Tämä on omasta admin centeristä, että miltä se näyttää ennen kun saa aktivoitua lisenssin. Tätä pitää saada ensin lisenssin käyttöön ennen kuin alkaa ottaa käyttöönsä
+![Alt text](./images/Founderz-agent2.png)
 
 # linkit
 https://learn.microsoft.com/en-us/microsoft-365/copilot/extensibility/declarative-agent-instructions
